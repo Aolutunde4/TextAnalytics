@@ -1,0 +1,2039 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="grade-c">
+<head>
+    <meta charset="utf-8">
+    
+    <script>
+        (function(w, d) {
+            w.config = w.config || {};
+            w.config.mustardcut = false;
+
+            
+            if (w.matchMedia && w.matchMedia('only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)').matches) {
+                w.config.mustardcut = true;
+                d.classList.add('js');
+                d.classList.remove('grade-c');
+            }
+        })(window, document.documentElement);
+    </script>
+
+
+
+    
+<script>
+    (function () {
+        if ( typeof window.CustomEvent === "function" ) return false;
+        function CustomEvent ( event, params ) {
+            params = params || { bubbles: false, cancelable: false, detail: null };
+            var evt = document.createEvent( 'CustomEvent' );
+            evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+            return evt;
+        }
+
+        CustomEvent.prototype = window.Event.prototype;
+
+        window.CustomEvent = CustomEvent;
+    })();
+</script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>The troubling rise of facial recognition technology</title>
+    <meta name="description" content="Hear the biggest stories from the world of science | 19 November 2020"/>
+    <meta property="og:url" content="https://www.nature.com/articles/d41586-020-03271-8"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="The troubling rise of facial recognition technology"/>
+    <meta property="og:description" content="Hear the biggest stories from the world of science | 19 November 2020"/>
+    <meta property="og:image"
+          content="https://media.nature.com/lw1024/magazine-assets/d41586-020-03271-8/d41586-020-03271-8_18597646.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@nature"/>
+    <meta name="twitter:title" content="The troubling rise of facial recognition technology"/>
+    <meta name="twitter:description" content="Nature - Hear the biggest stories from the world of science | 19 November 2020"/>
+    <meta name="twitter:image"
+          content="https://media.nature.com/lw1024/magazine-assets/d41586-020-03271-8/d41586-020-03271-8_18597646.jpg"/>
+    
+
+    <meta name="journal_id" content="41586">
+
+    <meta name="dc.title" content="The troubling rise of facial recognition technology">
+
+    <meta name="dc.source" content="Nature 2021">
+
+    <meta name="dc.format" content="text/html">
+
+    <meta name="dc.publisher" content="Nature Publishing Group">
+
+    <meta name="dc.date" content="2020-11-18">
+
+    <meta name="dc.type" content="Nature Podcast">
+
+    <meta name="dc.language" content="En">
+
+    <meta name="dc.copyright" content="2021 Nature">
+
+    <meta name="dc.rights" content="2021 Nature">
+
+    <meta name="dc.rightsAgent" content="journalpermissions@springernature.com">
+
+    <meta name="dc.description" content="The grave concerns over ethical and societal impacts of inescapable facial-recognition technology. Hear the biggest stories from the world of science | 19 November 2020">
+
+    <meta name="prism.publicationName" content="Nature">
+
+    <meta name="prism.publicationDate" content="2020-11-18">
+
+    <meta name="prism.section" content="News">
+
+    <meta name="prism.startingPage" content="">
+
+    <meta name="prism.endingPage" content="">
+
+    <meta name="prism.copyright" content="2021 Nature">
+
+    <meta name="prism.rightsAgent" content="journalpermissions@springernature.com">
+
+    <meta name="prism.url" content="https://www.nature.com/articles/d41586-020-03271-8">
+
+    <meta name="prism.doi" content="doi:10.1038/d41586-020-03271-8">
+
+    <meta name="dc.identifier" content="doi:10.1038/d41586-020-03271-8">
+
+    <meta name="DOI" content="10.1038/d41586-020-03271-8">
+
+    <meta name="description" content="The grave concerns over ethical and societal impacts of inescapable facial-recognition technology. Hear the biggest stories from the world of science | 19 November 2020">
+
+    <meta name="dc.creator" content="Thompson, Benjamin">
+
+    <meta name="dc.creator" content="Van Noorden, Richard">
+
+    <meta name="dc.subject" content="Computer science">
+
+    <meta name="dc.subject" content="Ethics">
+
+    <meta name="dc.subject" content="Information technology">
+
+    <meta name="dc.subject" content="Machine learning">
+
+
+
+<script>(function(e){var t=e.documentElement,n=e.implementation;t.className='js';if(n&&n.hasFeature('http://www.w3.org/TR/SVG11/feature#Image','1.1')){t.className+=' svg'}})(document)</script>
+<link rel="stylesheet" href="/static/css/grade-c-5ee8dd01de.css">
+
+    
+    <link rel="preload" href=/static/fonts/HardingText-Regular-Web.woff2 as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" class="js-ctm" href="/static/css/magazine-nature-branded-46a196fdc8.css" media="only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)">
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/magazine-print-c4b5dffccb.css" media="print">
+
+<link rel="apple-touch-icon" sizes="180x180" href=/static/images/favicons/nature/apple-touch-icon.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/static/images/favicons/nature/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/static/images/favicons/nature/favicon-16x16.png>
+<link rel="manifest" href=/static/manifest.json crossorigin="use-credentials">
+<link rel="mask-icon" href=/static/images/favicons/nature/safari-pinned-tab.svg color="#000000">
+<link rel="shortcut icon" href=/static/images/favicons/nature/favicon.ico>
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-config" content=/static/browserconfig.xml>
+<meta name="theme-color" content="#000000">
+<meta name="application-name" content="Nature">
+
+<link rel="search" href="http://www.nature.com/search">
+<link rel="search" href="http://www.nature.com/opensearch/opensearch.xml" type="application/opensearchdescription+xml" title="nature.com">
+<link rel="search" href="http://www.nature.com/opensearch/request" type="application/sru+xml" title="nature.com">
+
+    <meta name="WT.cg_s" content="Nature Podcast"/>
+    <meta name="WT.z_cg_type" content="Nature Podcast"/>
+    <meta name="WT.page_categorisation" content="Article page"/>
+    <meta name="WT.z_subject_term" content="Ethics, Information technology, Machine learning, Computer science"/>
+
+<meta name="WT.template" content="oscar"/>
+<meta name="WT.cg_n" content="Nature"/>
+<meta name="dc.rights" content="©2022 Macmillan Publishers Limited. All Rights Reserved."/>
+<meta name="WT.z_bandiera_abtest" content="a"/>
+
+<script data-test="dataLayer">
+    window.dataLayer = [{"content":{"category":{"contentType":"nature podcast","legacy":{"webtrendsPrimaryArticleType":"news","webtrendsSubjectTerms":"computer-science;ethics;information-technology;machine-learning","webtrendsContentCategory":null,"webtrendsContentCollection":null,"webtrendsContentGroup":"Nature","webtrendsContentGroupType":null,"webtrendsContentSubGroup":"Nature Podcast"}},"article":{"doi":"10.1038/d41586-020-03271-8"},"attributes":{"cms":"core media","deliveryPlatform":"oscar","copyright":{"open":false,"legacy":{"webtrendsLicenceType":null}}},"contentInfo":{"authors":["Benjamin Thompson","Richard Van Noorden"],"publishedAt":1605657600,"publishedAtString":"2020-11-18","title":"The troubling rise of facial recognition technology","legacy":null,"publishedAtTime":null,"documentType":"aplusplus"},"journal":{"pcode":"nature","title":"nature","volume":null,"issue":null},"authorization":{"status":true},"features":[{"name":"furtherReadingSection","present":false}],"collection":null},"page":{"category":{"pageType":"article"},"attributes":{"template":"magazine mosaic","featureFlags":[{"name":"ab_test_news_feature","active":false},{"name":"ab_test_highlight_supp_info","active":false},{"name":"nature-oa-paywall","active":true},{"name":"nature-onwards-journey","active":false}],"testGroup":null},"search":null},"privacy":{},"version":"1.0.0","product":null,"session":null,"user":null,"backHalfContent":false,"country":"US","hasBody":false,"uneditedManuscript":false,"twitterId":["o3xnx","o43y9","o3ef7"]}];
+    window.dataLayer.push({
+        ga4MeasurementId: 'G-ERRNTNZ807',
+        ga360TrackingId: 'UA-71668177-1',
+        twitterId: ['3xnx', 'o43y9', 'o3ef7'],
+        ga4ServerUrl: 'https://collect.nature.com',
+        imprint: 'nature'
+    });
+</script>
+
+
+    <script>
+        window.dataLayer.push({
+            cmpAndNewGtmFeatureFlag: true
+        });
+    </script>
+
+
+
+<!-- Google Tag Manager -->
+<script data-test="gtm-head">
+    window.initGTM = function() {
+        if (window.config.mustardcut) {
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                
+                    j.src = 'https://collect.nature.com/gtm.js?id=' + i + dl;
+                
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-MRVXSHQ');
+        }
+    }
+</script>
+<!-- End Google Tag Manager -->
+
+    <script>
+    (function(w,d,t) {
+        function cc() {
+            var h = w.location.hostname;
+            if (h.indexOf('preview-www.nature.com') > -1) return;
+
+            var e = d.createElement(t),
+                    s = d.getElementsByTagName(t)[0];
+
+            if (h.indexOf('nature.com') > -1) {
+                e.src = 'https://push-content.springernature.io/pcf_sb_5_1617714720898560639/production_live/consent-bundle-8-8.js';
+                e.setAttribute('onload', "initGTM(window,document,'script','dataLayer','GTM-MRVXSHQ')");
+            } else {
+                e.src = '/static/js/cookie-consent-es5-bundle-444fb65518.js';
+                e.setAttribute('data-consent', h);
+            }
+            s.insertAdjacentElement('afterend', e);
+        }
+
+        cc();
+    })(window,document,'script');
+</script>
+
+
+    <script>
+        window.eligibleForRa21 = 'true'; // required by js files for displaying the cobranding box (entitlement-box.js)
+        window.idpVerifyPrefix = 'https://verify.nature.com';
+        window.ra21Host = 'https://wayf.springernature.com';
+    </script>
+
+    
+        
+    <script id="js-position0">
+        (function(w, d) {
+            w.idpVerifyPrefix = 'https://verify.nature.com';
+            w.ra21Host = 'https://wayf.springernature.com';
+            var moduleSupport = (function() {
+                return 'noModule' in d.createElement('script');
+            })();
+
+            var polyfillsUrl = function() {
+                var features = {
+                    'IntersectionObserver': window.IntersectionObserver,
+                    'Promise': window.Promise,
+                    'URLSearchParams': window.URLSearchParams,
+                    'Symbol.iterator': window.Symbol && Symbol.iterator,
+                    'Array.from': Array.from,
+                    'Array.prototype.includes': Array.prototype.includes,
+                    'Array.prototype.find': Array.prototype.find,
+                    'Array.prototype.forEach': Array.prototype.forEach,
+                    'NodeList.prototype.forEach': NodeList.prototype.forEach,
+                    'Element.prototype.closest': Element.prototype.closest,
+                    'Element.prototype.prepend': Element.prototype.prepend,
+                    'Element.prototype.remove': Element.prototype.remove,
+                    'Object.assign': Object.assign
+                };
+                var req = [];
+                for (var feature in features) {
+                    if (Object.prototype.hasOwnProperty.call(features, feature) && !features[feature]) {
+                        req.push(feature);
+                    }
+                }
+                if (req.length) {
+                    return 'https://polyfill.io/v3/polyfill.min.js?features=' + req.join('%2C') + '&flags=always';
+                }
+                return null;
+            };
+
+            if (w.config.mustardcut === true) {
+                w.loader = {
+                    index: 0,
+                    registered: [],
+                    scripts: [
+                        {src: polyfillsUrl(), test: 'polyfills-js', noinit: true},
+                        
+                            {src: '/static/js/magazine/magazine-mosaic-fa774b60d8.js', test: 'magazine-mosaic-js'},
+                            {src: '/static/js/shared-es6-bundle-b355ce3c25.js', test: 'shared-js', module: true},
+                            {src: '/static/js/shared-es5-bundle-456ad97e45.js', test: 'shared-js', nomodule: true},
+                            {src: '/static/js/header-150-es6-bundle-5bb959eaa1.js', test: 'header-150-js', module: true},
+                            {src: '/static/js/header-150-es5-bundle-88bc691ce2.js', test: 'header-150-js', nomodule: true}
+                        
+                    ].filter(function (s) {
+                        if (s.src === null) return false;
+                        if (moduleSupport && s.nomodule) return false;
+                        return !(!moduleSupport && s.module);
+                    }),
+
+                    register: function (value) {
+                        this.registered.push(value);
+                    },
+
+                    ready: function () {
+                        if (this.registered.length === this.scripts.length) {
+                            this.registered.forEach(function (fn) {
+                                if (typeof fn === 'function') {
+                                    setTimeout(fn, 0); 
+                                }
+                            });
+                            this.ready = function () {};
+                        }
+                    },
+
+                    insert: function (s) {
+                        var t = d.getElementById('js-position' + this.index);
+                        if (t && t.insertAdjacentElement) {
+                            t.insertAdjacentElement('afterend', s);
+                        } else {
+                            d.head.appendChild(s);
+                        }
+                        ++this.index;
+                    },
+
+                    createScript: function (script, beforeLoad) {
+                        var s = d.createElement('script');
+                        s.id = 'js-position' + (this.index + 1);
+                        s.setAttribute('data-test', script.test);
+                        if (beforeLoad) {
+                            s.defer = 'defer';
+                            s.onload = function () {
+                                if (script.noinit) {
+                                    loader.register(true);
+                                }
+                                if (d.readyState === 'interactive' || d.readyState === 'complete') {
+                                    loader.ready();
+                                }
+                            };
+                        } else {
+                            s.async = 'async';
+                        }
+                        s.src = script.src;
+                        return s;
+                    },
+
+                    init: function () {
+                        this.scripts.forEach(function (s) {
+                            loader.insert(loader.createScript(s, true));
+                        });
+
+                        d.addEventListener('DOMContentLoaded', function () {
+                            loader.ready();
+                            
+                                var conditionalScripts = null;
+                            
+
+                            if (conditionalScripts) {
+                                conditionalScripts.filter(function (script) {
+                                    return !!document.querySelector(script.match) && !((moduleSupport && script.nomodule) || (!moduleSupport && script.module));
+                                }).forEach(function (script) {
+                                    loader.insert(loader.createScript(script));
+                                });
+                            }
+                        }, false);
+                    }
+                };
+                loader.init();
+            }
+        })(window, document);
+    </script>
+
+
+    
+</head>
+<body>
+    
+    
+        
+<div class="position-relative cleared z-index-50 background-white" data-test="top-containers">
+    <a class="c-skip-link" href="#content">Skip to main content</a>
+
+
+
+<div class="c-grade-c-banner u-hide">
+    <div class="c-grade-c-banner__container">
+        
+        <p>Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain
+            the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in
+            Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles
+            and JavaScript.</p>
+
+    </div>
+</div>
+
+    
+
+    
+    
+        <div class="u-hide u-show-following-ad"></div>
+
+        <aside class="c-ad c-ad--728x90">
+            <div class="c-ad__inner" data-container-type="banner-advert">
+                <p class="c-ad__label">Advertisement</p>
+                
+        
+            
+    <div id="div-gpt-ad-top-1"
+         class="div-gpt-ad advert leaderboard js-ad text-center hide-print grade-c-hide"
+         data-ad-type="top"
+         data-pa11y-ignore
+         data-gpt
+         data-gpt-unitpath="/285/nature.com/article"
+         data-gpt-sizes="728x90"
+         data-gpt-targeting="type=article;pos=top;artid=d41586-020-03271-8;doi=10.1038/d41586-020-03271-8;subjmeta=114,117,1305,179,258,631,639,689,705,706;kwrd=Computer+science,Ethics,Information+technology,Machine+learning">
+        <noscript>
+            <a href="//pubads.g.doubleclick.net/gampad/jump?iu=/285/nature.com/article&amp;sz=728x90&amp;c=-393780735&amp;t=pos%3Dtop%26type%3Darticle%26artid%3Dd41586-020-03271-8%26doi%3D10.1038/d41586-020-03271-8%26subjmeta%3D114,117,1305,179,258,631,639,689,705,706%26kwrd%3DComputer+science,Ethics,Information+technology,Machine+learning">
+                <img data-test="gpt-advert-fallback-img"
+                     src="//pubads.g.doubleclick.net/gampad/ad?iu=/285/nature.com/article&amp;sz=728x90&amp;c=-393780735&amp;t=pos%3Dtop%26type%3Darticle%26artid%3Dd41586-020-03271-8%26doi%3D10.1038/d41586-020-03271-8%26subjmeta%3D114,117,1305,179,258,631,639,689,705,706%26kwrd%3DComputer+science,Ethics,Information+technology,Machine+learning"
+                     alt="Advertisement"
+                     width="728"
+                     height="90"></a>
+        </noscript>
+    </div>
+
+        
+    
+            </div>
+        </aside>
+    <header class="c-header" id="header" data-header data-track-component="nature-150-split-header" style="border-color:#000">
+        <div class="c-header__row c-header__row--flush">
+            <div class="c-header__container">
+                <div class="c-header__split">
+                    
+                    
+                    <div class="c-header__logo-container">
+                        
+                        <a href="/"
+                           data-track="click" data-track-action="home" data-track-label="image">
+                            <picture class="c-header__logo">
+                                <source srcset="//media.springernature.com/full/nature-cms/uploads/product/nature/header-86f1267ea01eccd46b530284be10585e.svg" media="(min-width: 875px)">
+                                <img src="//media.springernature.com/full/nature-cms/uploads/product/nature/header-86f1267ea01eccd46b530284be10585e.svg" alt="Nature">
+                            </picture>
+                        </a>
+                    
+                    </div>
+                    
+                    <ul class="c-header__menu c-header__menu--global">
+                        <li class="c-header__item c-header__item--nature-research">
+                            <a class="c-header__link" href="https://www.nature.com/siteindex" data-test="siteindex-link"
+                               data-track="click" data-track-action="open nature research index" data-track-label="link">
+                                <span>View all journals</span>
+                            </a>
+                        </li>
+                        <li class="c-header__item c-header__item--pipe">
+                            <a class="c-header__link"
+                               href="#search-menu"
+                               data-header-expander
+                               data-test="search-link" data-track="click" data-track-action="open search tray" data-track-label="button">
+                                <span>Search</span><svg role="img" aria-hidden="true" focusable="false" height="22" width="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M16.48 15.455c.283.282.29.749.007 1.032a.738.738 0 01-1.032-.007l-3.045-3.044a7 7 0 111.026-1.026zM8 14A6 6 0 108 2a6 6 0 000 12z"/></svg>
+                            </a>
+                        </li>
+                        <li class="c-header__item">
+                            <a href="/nams/svc/myaccount"
+    id="my-account"
+    class="c-header__link placeholder"
+    data-test="login-link" data-track="click" data-track-action="my account" data-track-category="nature-150-split-header" data-track-label="link">
+    <span>My Account</span><svg role="img" aria-hidden="true" focusable="false" height="22" width="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M10.238 16.905a7.96 7.96 0 003.53-1.48c-.874-2.514-2.065-3.936-3.768-4.319V9.83a3.001 3.001 0 10-2 0v1.277c-1.703.383-2.894 1.805-3.767 4.319A7.96 7.96 0 009 17c.419 0 .832-.032 1.238-.095zm4.342-2.172a8 8 0 10-11.16 0c.757-2.017 1.84-3.608 3.49-4.322a4 4 0 114.182 0c1.649.714 2.731 2.305 3.488 4.322zM9 18A9 9 0 119 0a9 9 0 010 18z" fill="#333" fill-rule="evenodd"/></svg>
+</a>
+<a href="https://idp.nature.com/authorize/natureuser?client_id&#x3D;grover&amp;redirect_uri&#x3D;https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-020-03271-8"
+    id="login-button"
+    style="display: none;"
+    class="c-header__link placeholder"
+    data-test="login-link" data-track="click" data-track-action="login" data-track-category="nature-150-split-header" data-track-label="link">
+    <span>Login</span><svg role="img" aria-hidden="true" focusable="false" height="22" width="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M10.238 16.905a7.96 7.96 0 003.53-1.48c-.874-2.514-2.065-3.936-3.768-4.319V9.83a3.001 3.001 0 10-2 0v1.277c-1.703.383-2.894 1.805-3.767 4.319A7.96 7.96 0 009 17c.419 0 .832-.032 1.238-.095zm4.342-2.172a8 8 0 10-11.16 0c.757-2.017 1.84-3.608 3.49-4.322a4 4 0 114.182 0c1.649.714 2.731 2.305 3.488 4.322zM9 18A9 9 0 119 0a9 9 0 010 18z" fill="#333" fill-rule="evenodd"/></svg>
+</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+            <div class="c-header__row">
+                <div class="c-header__container" data-test="navigation-row">
+                    <div class="c-header__split">
+                        <div class="c-header__split">
+                            <ul class="c-header__menu c-header__menu--journal">
+                                
+                                    <li class="c-header__item c-header__item--dropdown-menu" data-test="explore-content-button">
+                                        <a href="#explore"
+                                           class="c-header__link c-header__link--chevron"
+                                           data-header-expander
+                                           data-test="menu-button--explore"
+                                           data-track="click" data-track-action="open explore expander" data-track-label="button">
+                                            <span><span class="c-header__show-text">Explore</span> content</span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"/></svg>
+                                        </a>
+                                    </li>
+                                
+                                <li class="c-header__item c-header__item--dropdown-menu">
+                                    <a href="#about-the-journal"
+                                       class="c-header__link c-header__link--chevron"
+                                       data-header-expander
+                                       data-test="menu-button--about-the-journal"
+                                       data-track="click" data-track-action="open about the journal expander" data-track-label="button">
+                                        <span>About <span class="c-header__show-text">the journal</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"/></svg>
+                                    </a>
+                                </li>
+                                
+                                    <li class="c-header__item c-header__item--dropdown-menu u-mr-2" data-test="publish-with-us-button">
+                                        <a href="#publish-with-us"
+                                           class="c-header__link c-header__link--chevron c-header__link--dropdown-menu"
+                                           data-header-expander
+                                           data-test="menu-button--publish"
+                                           data-track="click" data-track-action="open publish with us expander" data-track-label="button">
+                                            <span>Publish <span class="c-header__show-text">with us</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"/></svg>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+
+                            
+                                <div class="c-header__menu u-ml-16 u-show-lg u-hide u-show-at-lg">
+                                    <div class="c-header__item c-header__item--pipe">
+                                        <a class="c-header__link"
+                                           href="https://www.nature.com/nature/subscribe"
+                                           data-track="click"
+                                           data-track-action="subscribe"
+                                           data-track-label="link"
+                                           data-test=menu-button-subscribe>
+                                            <span>Subscribe</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <ul class="c-header__menu c-header__menu--tools">
+                            
+                                <li class="c-header__item">
+                                    <a class="c-header__link"
+                                       href="https://www.nature.com/my-account/alerts/subscribe-journal?list-id&#x3D;1"
+                                       rel="nofollow"
+                                       data-track="click"
+                                       data-track-action="Sign up for alerts"
+                                       data-track-label="link (desktop site header)"
+                                       data-track-external>
+                                        <span>Sign up for alerts</span><svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m4 10h2.5c.27614237 0 .5.2238576.5.5s-.22385763.5-.5.5h-3.08578644l-1.12132034 1.1213203c-.18753638.1875364-.29289322.4418903-.29289322.7071068v.1715729h14v-.1715729c0-.2652165-.1053568-.5195704-.2928932-.7071068l-1.7071068-1.7071067v-3.4142136c0-2.76142375-2.2385763-5-5-5-2.76142375 0-5 2.23857625-5 5zm3 4c0 1.1045695.8954305 2 2 2s2-.8954305 2-2zm-5 0c-.55228475 0-1-.4477153-1-1v-.1715729c0-.530433.21071368-1.0391408.58578644-1.4142135l1.41421356-1.4142136v-3c0-3.3137085 2.6862915-6 6-6s6 2.6862915 6 6v3l1.4142136 1.4142136c.3750727.3750727.5857864.8837805.5857864 1.4142135v.1715729c0 .5522847-.4477153 1-1 1h-4c0 1.6568542-1.3431458 3-3 3-1.65685425 0-3-1.3431458-3-3z" fill="#222"/></svg>
+                                    </a>
+                                </li>
+                            
+                            
+                                <li class="c-header__item c-header__item--pipe">
+                                    <a class="c-header__link"
+                                       href="http://feeds.nature.com/nature/rss/current"
+                                       data-track="click"
+                                       data-track-action="rss feed"
+                                       data-track-label="link">
+                                        <span>RSS feed</span>
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+    </header>
+
+
+    
+    
+        <nav class="u-mb-16 u-hide u-show-at-md" aria-label="breadcrumbs">
+            <div class="u-container">
+                <ol class="c-breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="c-breadcrumbs__item" id="breadcrumb0" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a class="c-breadcrumbs__link"
+                               href="/" itemprop="item"
+                               data-track="click" data-track-action="breadcrumb" data-track-category="header" data-track-label="link:nature"><span itemprop="name">nature</span></a><meta itemprop="position" content="1">
+                                    <svg class="c-breadcrumbs__chevron" role="img" aria-hidden="true" focusable="false" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m5.96738168 4.70639573 2.39518594-2.41447274c.37913917-.38219212.98637524-.38972225 1.35419292-.01894278.37750606.38054586.37784436.99719163-.00013556 1.37821513l-4.03074001 4.06319683c-.37758093.38062133-.98937525.38100976-1.367372-.00003075l-4.03091981-4.06337806c-.37759778-.38063832-.38381821-.99150444-.01600053-1.3622839.37750607-.38054587.98772445-.38240057 1.37006824.00302197l2.39538588 2.4146743.96295325.98624457z"
+                                              fill="#666" fill-rule="evenodd" transform="matrix(0 -1 1 0 0 10)"/>
+                                    </svg>
+                                </li><li class="c-breadcrumbs__item" id="breadcrumb1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a class="c-breadcrumbs__link"
+                               href="/nature/articles?type&#x3D;nature-podcast" itemprop="item"
+                               data-track="click" data-track-action="breadcrumb" data-track-category="header" data-track-label="link:nature podcast"><span itemprop="name">nature podcast</span></a><meta itemprop="position" content="2">
+                                    <svg class="c-breadcrumbs__chevron" role="img" aria-hidden="true" focusable="false" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m5.96738168 4.70639573 2.39518594-2.41447274c.37913917-.38219212.98637524-.38972225 1.35419292-.01894278.37750606.38054586.37784436.99719163-.00013556 1.37821513l-4.03074001 4.06319683c-.37758093.38062133-.98937525.38100976-1.367372-.00003075l-4.03091981-4.06337806c-.37759778-.38063832-.38381821-.99150444-.01600053-1.3622839.37750607-.38054587.98772445-.38240057 1.37006824.00302197l2.39538588 2.4146743.96295325.98624457z"
+                                              fill="#666" fill-rule="evenodd" transform="matrix(0 -1 1 0 0 10)"/>
+                                    </svg>
+                                </li><li class="c-breadcrumbs__item" id="breadcrumb2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <span itemprop="name">article</span><meta itemprop="position" content="3"></li>
+                </ol>
+            </div>
+        </nav>
+    
+
+
+
+    
+
+</div>
+
+    
+    <div id="content" class="article-page position-relative z-index-1">
+    <div class="u-container u-mt-32 u-mb-32 u-clearfix article-page--news">
+        
+
+
+
+
+
+
+
+<article class="article-item article-item--open" itemscope="" itemtype="http://schema.org/NewsArticle" data-track-component="news" lang="en">
+    <div class="u-clearfix container-type-article" data-container-type="article" data-component="article-container">
+        
+            
+                
+                    <main class="c-article-main-column u-float-left" itemprop="articleBody">
+                       
+<div class="c-article-header">
+    <header>
+        <div class="c-article-header__restrict">
+            <ul class="c-article-identifiers" data-test="article-identifier">
+                <li class="c-article-identifiers__item" data-test="article-category"><span class="c-article-identifiers__type">NATURE PODCAST</li>
+                <li class="c-article-identifiers__item"><time itemprop="datePublished">18 November 2020</time></li>
+                
+            </ul>
+
+            <h1 class="c-article-magazine-title" itemprop="headline">The troubling rise of facial recognition technology</h1>
+
+            <div class="u-clearfix">
+                
+                <div class="c-article-teaser-text">
+                    The grave concerns over ethical and societal impacts of inescapable facial-recognition technology.
+                </div>
+            </div>
+        </div>
+        
+            <div class="c-article-author-list-container u-clearfix">
+                <ul class="c-article-author-list js-etal-collapsed" data-etal="25" data-etal-small="3" data-test="authors-list" data-component-authors-activator="authors-list">
+    
+        <li class="c-author-list__item"><a data-test="author-name"
+                data-track="click" data-track-label="view author info" href="#author-0" data-author-popup="author-0"
+                >Benjamin Thompson</a>
+            
+                
+            
+             &amp; 
+        </li>
+    
+        <li class="c-author-list__item"><a data-test="author-name"
+                data-track="click" data-track-label="view author info" href="#author-1" data-author-popup="author-1"
+                >Richard Van Noorden</a>
+            
+                
+            
+            
+        </li>
+    
+</ul>
+<div class="u-js-hide u-hide-print cleared" data-test="author-info">
+    <ol class="c-article-authors-listing u-list-reset">
+        
+            <li class="c-article-authors-listing__item">
+                
+                    <span class="c-article-authors-search__title u-h3 js-search-name">Benjamin Thompson</span>
+                
+                
+                
+                    <div id="author-0">
+                        <div class="c-article-authors-search__list">
+                            <div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?author=&quot;Benjamin Thompson&quot;" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link">View author publications</a></div>
+                            <div class="c-article-authors-search__item c-article-authors-search__list-item--right">
+                                <p class="search-in-title-js c-article-authors-search__text">You can also search for this author in <span
+                                    class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd&#x3D;search&amp;term&#x3D;%22Benjamin%2BThompson%22" data-track="click" data-track-action="author link - PubMed" data-track-label="link">PubMed</a>
+                                    <span class="u-hide">&nbsp;</span><a class="c-article-identifiers__item" href="https://scholar.google.co.uk/scholar?as_q&#x3D;&amp;btnG&#x3D;Search+Scholar&amp;as_sauthors&#x3D;%22Benjamin%2BThompson%22" data-track="click" data-track-action="author link - Google Scholar" data-track-label="link">Google Scholar</a>
+                                    </span></p>
+                            </div>
+                       </div>
+                    </div>
+                
+            </li>
+        
+            <li class="c-article-authors-listing__item">
+                
+                    <span class="c-article-authors-search__title u-h3 js-search-name">Richard Van Noorden</span>
+                
+                
+                
+                    <div id="author-1">
+                        <div class="c-article-authors-search__list">
+                            <div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?author=&quot;Richard Van Noorden&quot;" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link">View author publications</a></div>
+                            <div class="c-article-authors-search__item c-article-authors-search__list-item--right">
+                                <p class="search-in-title-js c-article-authors-search__text">You can also search for this author in <span
+                                    class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd&#x3D;search&amp;term&#x3D;%22Richard%2BVan+Noorden%22" data-track="click" data-track-action="author link - PubMed" data-track-label="link">PubMed</a>
+                                    <span class="u-hide">&nbsp;</span><a class="c-article-identifiers__item" href="https://scholar.google.co.uk/scholar?as_q&#x3D;&amp;btnG&#x3D;Search+Scholar&amp;as_sauthors&#x3D;%22Richard%2BVan+Noorden%22" data-track="click" data-track-action="author link - Google Scholar" data-track-label="link">Google Scholar</a>
+                                    </span></p>
+                            </div>
+                       </div>
+                    </div>
+                
+            </li>
+        
+    </ol>
+</div>
+
+            </div>
+        
+        <div class="c-article-extras-additional-links">
+            <ul class="c-article-social-list u-hide-print">
+    <li class="c-article-social-list__item">
+        <a class="c-article-social-list__icon--inline" aria-label="Twitter" data-track="click" data-track-action="twitter" data-track-category="social" data-track-label="10.1038/d41586-020-03271-8" href="https://twitter.com/intent/tweet?text=The+troubling+rise+of+facial+recognition+technology&url=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-020-03271-8">
+            <span class="u-visually-hidden">Twitter</span>
+            <svg class="u-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M20.813 11.488a3.075 3.075 0 0 0 1.292-1.715 5.663 5.663 0 0 1-1.866.75 2.86 2.86 0 0 0-2.142-.978c-1.622 0-2.937 1.387-2.937 3.098 0 .242.025.48.075.704-2.438-.13-4.604-1.362-6.053-3.237a3.226 3.226 0 0 0-.397 1.559c0 1.075.519 2.022 1.306 2.579a2.84 2.84 0 0 1-1.33-.388v.038c0 1.5 1.013 2.753 2.358 3.037a2.78 2.78 0 0 1-1.328.054c.375 1.232 1.458 2.13 2.744 2.153a5.704 5.704 0 0 1-4.35 1.284 8.014 8.014 0 0 0 4.502 1.39c5.403 0 8.357-4.721 8.357-8.815l-.008-.4a6.091 6.091 0 0 0 1.465-1.605 5.657 5.657 0 0 1-1.687.488l-.002.004Z"/></svg>
+        </a>
+    </li>
+    <li class="c-article-social-list__item">
+        <a class="c-article-social-list__icon--inline" aria-label="Facebook" data-track="click" data-track-action="facebook" data-track-category="social" data-track-label="10.1038/d41586-020-03271-8" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-020-03271-8">
+            <span class="u-visually-hidden">Facebook</span>
+            <svg class="u-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M15.896 22.863h-3.325V15.02H10.91V12.32h1.662v-1.623c0-2.204.938-3.516 3.604-3.516h2.219v2.703h-1.388c-1.037 0-1.106.377-1.106 1.082l-.005 1.353h2.512l-.292 2.702h-2.219v7.843Z"/></svg>
+        </a>
+    </li>
+    <li class="c-article-social-list__item">
+        <a class="c-article-social-list__icon--inline" aria-label="Email" data-track="click" data-track-action="email" data-track-category="social" data-track-label="10.1038/d41586-020-03271-8" href="mailto:?subject=The troubling rise of facial recognition technology&body=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-020-03271-8">
+            <span class="u-visually-hidden">Email</span>
+            <svg class="u-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="m15 15.327-4.375-3.41a.475.475 0 0 0-.656.072.447.447 0 0 0 .073.639l4.66 3.63a.477.477 0 0 0 .597 0l4.66-3.63a.447.447 0 0 0 .072-.64.475.475 0 0 0-.656-.07L15 15.327ZM9 10h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1Z"/></svg>
+        </a>
+    </li>
+</ul>
+
+                <nav class="c-article-subscription-links" aria-label="Subscription links">
+                    <div class="c-dropdown" data-test="dropdown-podcast"><span class="c-dropdown__label ">Subscribe</span>
+  <div class="u-hide u-js-show"><button class="c-dropdown__button" aria-expanded="false" data-track="click" data-track-action="subscribe" data-track-category="podcast subscribe button" data-track-label="subscribe button click" data-dropdown="" data-dropdown-target="#subscription-dropdown"><span>Subscribe</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="c-dropdown__icon" role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></svg>
+    </button></div>
+  <ul class="c-dropdown__menu u-js-hide" id="subscription-dropdown">
+    <li><a href="https://itunes.apple.com/gb/podcast/nature-podcast/id81934659?mt=2" target="_blank" class="c-dropdown__link" data-track="click" data-track-action="itunes" data-track-category="podcast subscribe button" data-track-label="itunes subscribe button click">iTunes</a></li>
+    <li><a href="https://www.google.com/podcasts?feed=aHR0cDovL2ZlZWRzLm5hdHVyZS5jb20vbmF0dXJlL3BvZGNhc3QvY3VycmVudA%3D%3D" target="_blank" class="c-dropdown__link" data-track="click" data-track-action="google-podcast" data-track-category="podcast subscribe button" data-track-label="google-podcast subscribe button click">Google Podcast</a></li>
+    <li><a href="https://www.acast.com/nature/" target="_blank" class="c-dropdown__link" data-track="click" data-track-action="acast" data-track-category="podcast subscribe button" data-track-label="acast subscribe button click">acast</a></li>
+    <li><a href="http://rss.acast.com/nature" target="_blank" class="c-dropdown__link" data-track="click" data-track-action="rss" data-track-category="podcast subscribe button" data-track-label="rss subscribe button click">RSS</a></li>
+  </ul>
+</div>
+
+                </nav>
+        </div>
+    </header>
+</div>
+
+                
+            
+        
+
+        
+            
+                
+                    <noscript>
+                        
+<div class="c-nature-box c-nature-box--side " data-component="entitlement-box">
+    
+        <p class="c-nature-box__text js-text">You have full access to this article via your institution.</p>
+        
+    
+    <div class="c-pdf-download u-clear-both">
+        <a href="/articles/d41586-020-03271-8.pdf" class="c-pdf-download__link" data-article-pdf="true" data-readcube-pdf-url="true" data-test="download-pdf" data-draft-ignore="true" data-track="click" data-track-action="download pdf" data-track-label="link" data-track-external>
+            <span>Download PDF</span>
+            <svg aria-hidden="true" focusable="false" width="16" height="16" class="u-icon"><use xlink:href="#global-icon-download"/></svg>
+        </a>
+    </div>
+    
+
+    
+</div>
+
+                    </noscript>
+
+                    
+                        <div class="c-nature-box c-nature-box--side u-display-none u-hide-print" aria-hidden="true" data-component="entitlement-box"
+    id=entitlement-box-entitled-mobile
+    
+    >
+
+    
+        <p class="c-nature-box__text js-text u-display-none" aria-hidden="true"></p>
+        
+        
+            
+        
+    
+</div>
+
+                    
+                
+            
+
+            
+                
+                    
+                
+                <div class="c-article-body u-clearfix">
+                    <p>
+ <div class="c-podcast u-sans-serif">
+  <div class="embed intensity--high">
+   <div class="c-podcast__container">
+    <h3 class="c-podcast__audio-caption">Listen to a special episode on facial recognition technology, with Benjamin Thompson and Richard Van Noorden.</h3>
+    <audio controls="controls" preload="none">
+     <source src="https://media.nature.com/original/magazine-assets/d41586-020-03271-8/d41586-020-03271-8_18597660.mpga">Your browser does not support the audio element.</source>
+    </audio>
+   </div>
+   <div class="c-podcast__download-transcript u-text14">
+    <a download="nature-18 November 2020-MO0" class="c-podcast__download" href="https://media.nature.com/original/magazine-assets/d41586-020-03271-8/d41586-020-03271-8_18597660.mpga" data-track="click" data-track-category="magazine podcast" data-track-action="download" data-track-label="MP3 download">Download MP3</a>
+    <div class="c-podcast__transcript">
+     <a class="c-podcast__audio-transcript-link" href="#MO0" data-track="click" data-track-category="magazine podcast" data-track-action="anchor-link" data-track-label="transcript">See transcript</a>
+    </div>
+   </div>
+  </div>
+ </div></p><p><b>In this episode:</b></p><h2>03:24 Standing up against ‘smart cities’</h2><p>Cities across the globe are installing thousands of surveillance cameras equipped with facial recognition technology. Although marketed as a way to reduce crime, researchers worry that these systems are ripe for exploitation and are calling for strict regulations on their deployment.</p><p><i>Feature: </i><a href="https://www.nature.com/articles/d41586-020-03188-2" data-track="click" data-label="https://www.nature.com/articles/d41586-020-03188-2" data-track-category="body text link"><i>Resisting the rise of facial recognition</i></a></p><h2>17:44 The ethics of researching facial recognition technology</h2><p>Despite concerns surrounding consent and use, researchers are still working on facial recognition technology. Can this sort of work be justified? We hear some of the debates going on in academia about this field of research.</p><p><i>Feature: </i><a href="https://www.nature.com/articles/d41586-020-03187-3" data-track="click" data-label="https://www.nature.com/articles/d41586-020-03187-3" data-track-category="body text link"><i>The ethical questions that haunt facial-recognition research</i></a></p><h2>25:02 What do researchers actually think?</h2><p>Nature surveyed 480 researchers who have published papers on facial recognition, AI and computer science. The results revealed that many researchers think there’s a problem.</p><p><a href="https://go.nature.com/get-the-nature-briefing" data-track="click" data-label="https://go.nature.com/get-the-nature-briefing" data-track-category="body text link"><i>Subscribe to Nature Briefing, an unmissable daily round-up of science news, opinion and analysis free in your inbox every weekday.</i></a></p><p><b><i>Never miss an episode: Subscribe to the Nature Podcast on </i></b><a href="https://podcasts.apple.com/gb/podcast/nature-podcast/id81934659?mt=2" data-track="click" data-label="https://podcasts.apple.com/gb/podcast/nature-podcast/id81934659?mt=2" data-track-category="body text link"><b><i>Apple Podcasts</i></b></a><b><i>, </i></b><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__podcasts.google.com_-3Ffeed-3DaHR0cDovL3d3dy5uYXR1cmUuY29tL25hdHVyZS9wb2RjYXN0L3Jzcy9uYXR1cmUueG1s&amp;d=DwMBaQ&amp;c=vh6FgFnduejNhPPD0fl_yRaSfZy8CWbWnIf4XJhSqx8&amp;r=XwxdmxBQFWLUNoOF_bwG8UwIHSWzv4Ouks23U2zxpiY&amp;m=vrAE9jP1EtE7kNSfLNimCXI5WREGSPAGn5MJ8if4UPk&amp;s=4j452kO7Ze7dQb9pgBBT2Cn89IZ1rZugk2j3Rf7c_lg&amp;e=" data-track="click" data-label="https://urldefense.proofpoint.com/v2/url?u=https-3A__podcasts.google.com_-3Ffeed-3DaHR0cDovL3d3dy5uYXR1cmUuY29tL25hdHVyZS9wb2RjYXN0L3Jzcy9uYXR1cmUueG1s&amp;d=DwMBaQ&amp;c=vh6FgFnduejNhPPD0fl_yRaSfZy8CWbWnIf4XJhSqx8&amp;r=XwxdmxBQFWLUNoOF_bwG8UwIHSWzv4Ouks23U2zxpiY&amp;m=vrAE9jP1EtE7kNSfLNimCXI5WREGSPAGn5MJ8if4UPk&amp;s=4j452kO7Ze7dQb9pgBBT2Cn89IZ1rZugk2j3Rf7c_lg&amp;e=" data-track-category="body text link"><b><i>Google Podcasts</i></b></a><b><i>, </i></b><a href="https://open.spotify.com/show/2MydwKJpiKwiNRdxIzvFIt" data-track="click" data-label="https://open.spotify.com/show/2MydwKJpiKwiNRdxIzvFIt" data-track-category="body text link"><b><i>Spotify</i></b></a><b><i> or your favourite podcast app. Head </i></b><a href="http://rss.acast.com/nature" data-track="click" data-label="http://rss.acast.com/nature" data-track-category="body text link"><b><i>here</i></b></a><b><i> for the Nature Podcast RSS feed﻿.</i></b></p>
+                </div>
+            
+                <p><em>doi: https://doi.org/10.1038/d41586-020-03271-8</em></p>
+
+            <div id="references" class="c-article-references__container">
+                
+            </div>
+                <div class="c-article-transcript__container">
+                    <h3 class="c-article-transcript__title" id="transcript">Transcript</h3>
+                    
+                        <h4 class="c-article-transcript__caption">Listen to a special episode on facial recognition technology, with Benjamin Thompson and Richard Van Noorden.</h4>
+                        <div id="MO0"><p><b>Host: Benjamin Thompson</b></p><p>Welcome back to the <i>Nature Podcast</i>. This week, a surveillance special…</p><p><i>[Jingle]</i></p><p><b>Host: Benjamin Thompson</b></p><p><i>Nature</i> has a special focus on facial recognition technologies and their role in surveillance systems this week, and we’re following suit here on the podcast. In this show, we’ll be exploring how these technologies are being used, the ethical issues to consider when doing research on them, and what academics in the field think about their use. One of the architects of this special is Richard Van Noorden, features editor here at <i>Nature</i>, and he’s co-hosting the <i>Nature Podcast</i> with me this week. Richard, hi.</p><p><b>Host: Richard Van Noorden</b></p><p>Hello, Ben. </p><p><b>Host: Benjamin Thompson</b></p><p>Well, Richard, first up, I suppose we have to ask what is facial recognition technology? I mean, I imagine that the clue is in the name, but can you give me an overview of how it works?</p><p><b>Host: Richard Van Noorden</b></p><p>Sure, so, essentially, this technology is taking the geometry of your face, like a face print which you can think of as a fingerprint of your finger. It’s something that uniquely classifies you, so it’s a biometric identifier. And then that can be used to check against other face prints. So, it could be used to verify that you are yourself. You can unlock your smartphone. That might be how you travel through a passport gate because you match your stored photo. Or it could be used in what’s called a sort of one-to-many comparison to scan a face print against hundreds or millions of others, and this is how police might scan a crowd to try and find someone on their watchlist, for example. </p><p><b>Host: Benjamin Thompson</b></p><p>It’s not a new technology, Richard. Why is <i>Nature </i>looking to cover it now?</p><p><b>Host: Richard Van Noorden</b></p><p>Yeah, so over the last few years, I think this technology has really made its way into many more places around the world, and resistance to it is also growing. This year, we’ve seen cities in America banning public agencies from using facial recognition because they’re worried about inaccuracies and bias, and we’re seeing proposals for regulation in Europe and the United States and many other places. And so, we’re taking a look at how researchers are essentially quite disturbed by the rise in this technology. So, I worked with my colleague, Davide Castelvecchi, a reporter here, and with freelancer Toni Roussi, and we examined this in three features. Now, this year, it’s actually been particularly timely because COVID has struck and we’ve actually seen places using facial recognition technology to help trace contacts and enforce quarantine, and people actually worry that the use of this live surveillance technology may linger on after the pandemic and that COVID is giving some cities and states the opportunity to experiment with and entrench these technologies. </p><p><b>Host: Benjamin Thompson</b></p><p>Well, the rise of facial recognition in cities around the world is the subject of our first story this week. We’ve been investigating the concerns about this technology’s spread and efforts to push back against it. Our journey begins in Serbia.</p><p><b>Interviewee: Danilo Krivokapić</b></p><p>What we know is that the whole city will be covered with these cameras.</p><p><b>Interviewer: Noah Baker</b></p><p>This is Danilo Krivokapić, director of the human-rights organisation the SHARE Foundation based in Belgrade, Serbia.</p><p><b>Interviewee: Danilo Krivokapić</b></p><p>At this moment, we were able to map, together with the citizens from Belgrade, more than 1,000 cameras on more than 460 locations in Belgrade.</p><p><b>Interviewer: Noah Baker</b></p><p>The spread of surveillance cameras across Serbia is concerning Danilo. But not simply because of their prevalence. These cameras are also equipped with facial recognition technology deployed in the name of crime prevention to create smart cities.</p><p><b>Interviewee: Danilo Krivokapić</b></p><p>Which means that if you have one city that is completely covered with cameras and you have facial recognition software and you also have a database of ID cards with biometric pictures, you can basically track everybody the whole time.</p><p><b>Interviewer: Noah Baker</b></p><p>And Danilo is warning that any system which helps governments to track people is open to abuse.</p><p><b>Interviewee: Danilo Krivokapić</b></p><p>If you have a system that is basically covering the whole city, these freedoms are in danger. We are also living in a country, I would say, politely, with fragile democracy, so when our government has such a powerful tool as this, this can lead to many, many problems.</p><p><b>Interviewer: Noah Baker</b></p><p>The expansion of this facial recognition technology in Belgrade is only the latest in a long line of examples across the world. </p><p><b>Interviewee: Steven Feldstein</b></p><p>I think the conventional wisdom with this kind of technology was that it was mostly centred around countries that were technologically sophisticated and also those with sort of poor human rights records.</p><p><b>Interviewer: Noah Baker</b></p><p>This is Steven Feldstein. He’s been analysing the spread of AI surveillance technologies for an international think tank in Washington DC.</p><p><b>Interviewee: Steven Feldstein</b></p><p>I think there was maybe a general sense that democracies were using this type of technology, these techniques, less, but that countries like China, Russia, Iran was pretty strong. Sophisticated capabilities and a poor record of freedoms were maybe the leading users of this tech. And what I found was actually that democracies are just as prevalent in terms of their use of these technologies as autocratic governments.</p><p><b>Interviewer: Noah Baker</b></p><p>For example, right here in London, facial recognition technology was used between 2016 and 2018 just up the road from <i>Nature</i>’s offices in Kings Cross Boulevard, a busy street in central London. That particular use of this tech has since been stopped. There was somewhat of an outcry after the public became aware of it. But police have also been using facial recognition across the UK since 2016. In several states of the US too there are similar uses of this technology by the police. </p><p><b>Interviewee: Steven Feldstein</b></p><p>In general, it was just more widespread than I anticipated, and that many countries with less sophisticated capabilities, places like Kenya, for example, countries in Central Asia, Serbia, they’re all deploying advanced facial recognition surveillance, social media monitoring and so forth.</p><p><b>Interviewer: Noah Baker</b></p><p>According to Steven’s research, the spread of this surveillance tech seems, in part, to be driven by so-called ‘soft loans’ from Chinese companies – a cheap form of finance that’s enabled governments to purchase the technology – and that raises a concern that Chinese authorities may have undue influence in countries which are buying their systems. But to better understand how these surveillance tools are spreading, Steven warns that only looking at China is too simplistic. After all, they aren’t the only providers of surveillance tech.</p><p><b>Interviewee: Steven Feldstein</b></p><p>China is a big player but it’s not the only player. Whether it’s democracies providing technology like the US, UK, France, Japan, and many others, Israel as well, as well as autocracies like Russia that also provide these types of capabilities. So, from what I’ve seen, the marketplace is crowded. There are a lot of different competitors from different countries who are seeking to provide this type of equipment.</p><p><b>Interviewer: Noah Baker</b></p><p>In the past few months, several companies, such as IBM and Microsoft, have distanced themselves from this kind of surveillance technology after receiving significant pushback, but it’s not really clear how many companies are involved in the development of this technology, and some may not be as sensitive to public pressure. Take, for example, the US company Sandvine. It provided technology to the government of Belarus, which allowed them to selectively censor websites, websites related to unrest due to disputed elections.</p><p><b>Interviewee: Steven Feldstein</b></p><p>Now, after a huge amount of political pressure in the United States, Sandvine has now kind of pulled its selling and its provision of these tools from Belarus. But that only happened because of a specific incident of political problems that arose in the US. Otherwise, Sandvine was perfectly happy to continue providing these tools to the Belarus government and, in fact, it continues to provide these same types of intrusive tools to other authoritarian governments, like Egypt, around the world. And so, in that sense, it almost seems to be a little bit reactive.</p><p><b>Interviewer: Noah Baker</b></p><p>So, if the spread of surveillance tech like facial recognition is mediated to some extent by the public response, that begs the question, ‘What do the public think?’ To give us some insight, here’s Carly Kind, director of the Ada Lovelace Institute in the UK.</p><p><b>Interviewee: Carly Kind</b></p><p>We surveyed 4,000 members of the public in a broadly representative sample, and we had some really interesting findings. We found that people, on the whole, were more comfortable with police using facial recognition technology than they were with the use of the tech in the private sector. So, around 69-70% of people broadly said they’d be comfortable with police using facial recognition technology in specific circumstances. Whereas much lower levels thought that facial recognition should be used in schools or in workplaces, for example.</p><p><b>Interviewer: Noah Baker</b></p><p>Whilst the majority of respondents were content with certain uses of the technology, 29% of people were not comfortable with it at all.</p><p><b>Interviewee: Carly Kind</b></p><p>Of those who said they weren’t comfortable, the main reason they gave is that they felt that it would normalise surveillance, and I think that that is a real concern that exists with lots of people and probably is experienced more highly by people of certain communities who already feel like they over-surveilled or over-policed, including communities from Black or minority ethnic backgrounds, and that is a real concern.</p><p><b>Interviewer: Noah Baker</b></p><p>This is also reflected in concerns from survey respondents that said that they were broadly content with the use of surveillance technology but they had caveats. And so, to get a more nuanced understanding, the Ada Lovelace Institute followed the survey up with several citizens’ biometrics councils, sort of like focus groups.</p><p><b>Interviewee: Carly Kind</b></p><p>We had a session specifically with people from Black or minority ethnic backgrounds, a session with people living with disabilities and a session with people from the LGBTQ community as well. Through those sessions we found a range of different anxieties and concerns with the use of facial recognition and other biometric technologies. A thread that ran throughout the citizens’ biometrics councils was that it would be really important that the technology doesn’t discriminate against certain groups of people. So, there’s a big concern on the part of the public that this technology discriminates, and they want to see some kind of verification or assurance that the technology is not discriminatory before it’s rolled out.</p><p><b>Interviewer: Noah Baker</b></p><p>These findings, along with several other concerns, have led the Ada Lovelace Institute to support a moratorium on this technology, at least until the regulatory issues are hammered out. None of the sources in this podcast are opposed to surveillance technology altogether, but quite often they are concerned that the tech is overtaking the regulation. Carly thinks that regulatory bodies need to put the people affected by facial recognition technologies front and centre when working out how best to use them in the future.</p><p><b>Interviewee: Carly Kind</b></p><p>We’ll be reporting the outcomes of the citizens’ biometrics council hopefully before the end of the year, and they’ve made a range of recommendations that we’d like to see now brought into policy. In parallel to that, we’ve also commissioned an independent review into the regulatory framework for biometric data in the UK. We appointed Matthew Ryder QC and a team of lawyers and technology experts to analyse the existing legal framework and make a range of recommendations as to how the law can be changed to better protect peoples’ lives and to enable the use of biometric technologies in a safe and trustworthy manner.</p><p><b>Interviewer: Noah Baker</b></p><p>That was Carly Kind from the Ada Lovelace Institute, based in the UK. You also heard from Danilo Krivokapić of the SHARE foundation in Serbia and Steven Feldstein at the Carnegie Endowment for International Peace based in the US. This package was produced by Nick Howe with narration by me, Noah Baker.</p><p><b>Host: Benjamin Thompson</b></p><p>Well, Richard, it seems then we’ve just heard that these cameras really are cropping up everywhere. </p><p><b>Host: Richard Van Noorden</b></p><p>Yeah, it’s extremely worrying, and what’s worrying is the lack of transparency here, the lack of understanding of where the data is going, and people feeling that in any place they might potentially be being watched by cameras or their image might be looked at afterwards by police using facial recognition technology and essentially, it sort of changes your feelings about how you go about your life, potentially. You might not go to a rally or a protest or even a football match if you think that facial recognition technology might be used, and it’s also a tool that’s just extremely suitable for sort of setting up an architecture of control, and often the communities on whom it’s being used say they don’t necessarily feel safer even though they’re being told that they ought to be safer because the cameras are there. So, a lot of the local resistance we’re seeing is being led by people who say, ‘This isn’t helping our community despite what we’re being told.’</p><p><b>Host: Benjamin Thompson</b></p><p>And I imagine that there are disproportionately different effects of the use of this technology in different communities.</p><p><b>Host: Richard Van Noorden</b></p><p>Exactly. There was an example earlier this year of the arrest of a guy called Robert Williams in Michigan after a facial recognition system misidentified him as someone who had stolen a watch. They had blurry surveillance footage of a Black man and they matched it to his driving license – he’s also Black – but it wasn’t him. They arrested him at his home and apparently, according to Williams who had a complaint filed for him by the American Civil Liberties Union, literally a detective showed him these photos, Williams picked them up, put it next to his face and said, ‘I hope you don’t think all Black people look alike. This is not me.’ And apparently the detective replied, ‘Well, the computer says it’s you.’ So, worst nightmare for anyone. He was released but he was held for more than a day. And people in the region say it’s not just that a mistake was made and, in this case, there wasn’t enough checking done on whether this supposed match was actually a match. This also plays into the feeling that the police in that region are over-policing the Black community, and they’re going to use this tool perhaps to concentrate even more on the people that they’re already arresting too much anyway, and this just played into those concerns. The ACLU, for instance, said, according to them, this tool doesn’t work well enough yet, and even when it does work, it’s too dangerous a tool. That’s what Phil Mayor of the ACLU says. So, that’s been an example that people have cited to talk about how this technology doesn’t work well enough and it could just be used to further entrench biased policing, is what they’re charging. </p><p><b>Host: Benjamin Thompson</b></p><p>Well, let’s talk about the technology. Facial recognition is a product of research, and the algorithms that underly the technology need to be developed and trained on faces, and this isn’t without its issues.</p><p><b>Host: Richard Van Noorden</b></p><p>Yeah, this has been called the ‘dirty little secret’ of facial recognition technology, and that’s that these algorithms need training on millions and millions of faces in order to get good at extracting the most relevant geometry from each face and to do this, researchers need datasets of lots of faces. And this has kind of blown up in the past few years because like much of computer science, facial recognition research has involved grabbing lots of public images off the internet, often licensed even for research use, and there are some very large datasets of millions of faces that are released by companies or just academic groups in order to train and test and benchmark how good their facial recognition algorithms are, and this was just the way it worked. And then an artist called Adam Harvey has been pointing out that this means that your face potentially is in a dataset that’s been shared and then has subsequently been cited and used by firms creating these systems for the military. So, this turned out to make some of the people who discovered they were in these photos pretty unhappy, and that was something that computer science researchers hadn’t really thought about. The data was public so what’s the harm? It turned out that the harm was from the sort of autonomy and the dignity of the people in these photos who, when they heard about it, didn’t really want their photos to be used in this way. And so, people are having to rethink, ‘Hmm, should we not be collecting datasets of photos in this way? Should we actually be asking people first, and how would we do that if we had millions of photos that we needed?’ And there are other ethical questions as well around the research here.</p><p><b>Host: Benjamin Thompson</b></p><p>Well, clearly ethical concerns around consent and how the technology is used, but also surrounding a very controversial area of research that uses these datasets, and that’s called facial analysis, where attempts are made to make inferences about someone’s characteristics by analysing their face. And yet even though these issues exist, people are still working on facial recognition research which begs the question, can this sort of research be justified? Well, to get a sense of some of the discussions going on in academia, I reached out to Karen Levy from Cornell University in the US, who researches the social, legal and ethical dimensions of new technologies.</p><p><b>Interviewee: Karen Levy</b></p><p>I think knowledge of history is almost always an essential in doing this sort of work and thinking about kind of the social implications of what one is doing. Many folks have compared modern face recognition to some of these older pseudoscientific attempts to discern like criminality from the shape of the face, right, things that were quite deeply rooted in racism and eugenics. I think they are quite apt comparisons between some of the modern research that tries to make similar inferences based on the face – things like sexual orientation or again, things like criminality or other kind of personal characteristics. And you still see papers, you still see attempts to sort of make such inferences, but I do think that for the most part, more researchers are kind of aware of the real limitations of doing so and of the social and ethical consequences that might adhere to that, and I know that some publication venues or conference venues have started to take much more seriously concerns about research that tries to do things like that.</p><p><b>Host: Benjamin Thompson</b></p><p>In your research, did you ever get a sense that people are going back to the argument that technology is morally neutral and it’s how it’s used that is part of the problem?</p><p><b>Interviewee: Karen Levy</b></p><p>Yeah, I mean people always like to make those assertions, right, that they’re just engineers and that folks sometimes disclaim responsibility for the tools that are actually built and deployed into the world that are based on the science that scientists do. I think with face recognition, for some applications like it goes even deeper than that, like the questions are actually about the integrity of the science itself, which researchers ought to be fundamentally concerned with. But even on top of that, I think there is increasing awareness that is still far from universal awareness of the degree to which we might ascribe moral responsibility or ethical responsibility to researchers for the work that they do and put out into the world. So, the ‘good’ uses of face recognition, or the ones that are often kind of rhetoricised, are almost always like finding missing people, missing children especially, or fighting terrorism, like things that I think everybody, for the most part, thinks are positive use cases. The difficulty is that it’s almost impossible to deploy a technology only for those use cases that everybody agrees are beneficial. It’s really, really difficult to prevent the creep of these tools for the use of lots and lots of things around which we have much more ambivalence about their ethical implications.</p><p><b>Host: Benjamin Thompson</b></p><p>So, if I come up with an algorithm that’s very, very good at recognising faces in a medical context, there’s obviously the potential that it could be used in a different sort of context, and that’s what researchers need to be cognisant of.</p><p><b>Interviewee: Karen Levy</b></p><p>Potentially, yeah, and I don’t think it necessarily means like a hard stop. I’m not trying to assert like that we shouldn’t do any research that might have some negative social implications because those are almost impossible to foresee. We should be reflective about them and we should think carefully about not disclaiming, ‘Well, I just do the science and therefore whatever happens next like doesn’t concern me,’ like that strikes me as a pretty fallacious argument. But there isn’t a bright line, I think, one way or the other. I don’t think the counter point to that is like, ‘Well, you should only do work about which you feel 100% confident that nobody will ever misuse it,’ like that would be a really difficult line to draw and would impede a lot of science. So, I think the answer is probably somewhere in the middle, right, and there are some institutional safeguards we can put in place to try to ensure beneficent use, but we’re never going to be 100% confident that that’s going to hold.</p><p><b>Host: Benjamin Thompson</b></p><p>I mean, you say putting safeguards in place, I mean, is it possible to make an ethical dataset and if so, is it possible to use it in ethical facial recognition research?</p><p><b>Interviewee: Karen Levy</b></p><p>I think there are certain kind of ethical minima that we might think about. So, certainly, thinking about consent is a good initial threshold, that you would want to ensure that you’re using a dataset about which you feel pretty confident that the folks in the dataset would assent to their inclusion. That already is a pretty difficult bar, and that’s not something that I think has had a lot of traction in computational research. Other folks think a lot about the relationship between academia and industry, right. People have very different takes on the degree to which they want to sort of productise their research versus do kind of basic research in this area. Beyond that, people think a lot about inclusion, and this is actually also, I think, a really interesting kind of ethical quagmire. So, a lot of folks become quite legitimately concerned about differential accuracy rates for different types of faces, right, for the faces of people of colour or the faces of women and how face recognition algorithms tend to be less accurate for those groups. So, there’s really interesting debate within the community about whether what we should want is more inclusive datasets for which there is more accuracy for those groups, or if we might say like, actually, the use of these datasets is a problem. We don’t necessarily want more inclusive datasets that will then be used to over-police Black communities. I think recognising kind of the moral ambiguity there is an initial step. But there’s like I think significant and legitimate disagreement about kind of what we ought to do in that case.</p><p><b>Host: Benjamin Thompson</b></p><p>Karen, you obviously work in this sphere. What are some of the things that have gone on and some of the changes that you’ve seen that have impressed on you this area of research?</p><p><b>Interviewee: Karen Levy</b></p><p>Oftentimes, I think in technical research, there’s a push to do things that are technically novel or to improve the state of the art in some way, and like I think the academic reward tends to come from doing something cool that nobody was able to do before. I think face recognition is a really great example of a context where technical advances may be socially and ethically consequential in ways that are only now, I think, becoming more widely appreciated. It’s really difficult, I think, to effect like broad culture change across the academic enterprise and to start to say like, ‘Well, maybe we should also reward like careful thinking about these social consequences or like maybe something that’s technically really impressive like isn’t something that really ought to be trumpeted and widely published.’ And we’re starting to see the community reckon with that, and I think it’s a difficult conversation to have because nobody wants to be accused of doing something unethical. The norms, I think, are changing fairly quickly. Some of the major machine learning conferences have just started requiring more attention from researchers to the ethical consequences of their work in ways that they didn’t before. It’ll be really interesting, I think, to watch that develop over the next few years because I think it’s new to the community, right. I think it’s a community that hasn’t previously reckoned with those things in an explicit way, and it will be interesting to see, five years from now, is it typical for researchers to think quite seriously or to include in their papers like ethical statements that are meaningful, or is it sort of like a fad that will fade or it won’t be effective or something? Those, I think, will be interesting developments to watch.</p><p><b>Host: Benjamin Thompson</b></p><p>Karen Levy from Cornell University there. Well, we heard Karen say, Richard, that conferences, in some cases, are beginning to put safeguards in place, but she also mentioned that some research papers are still coming out that are based on some fairly controversial research to say the very least. And this is something that you’ve been looking at for a feature this week. </p><p><b>Host: Richard Van Noorden</b></p><p>Yeah, there’s a number of papers, actually, that have come out from China that have been looking at using facial recognition to try and distinguish the faces of Uyghurs – this minority ethnic group, mostly Muslims, in western China, and it seems kind of remarkable that academic journals would publish this research, essentially giving it a tacit seal of, ‘Yes, this is okay science.’ There’s been a lot of debate this year about what should be done about those papers in that context. It’s not just that work, though. There’s other papers that try to look at other characteristics of people from their face. But nonetheless, amazingly, some of this research is still being done, it’s still being published, and it’s quite difficult to see how this passes ethical review. And there’s essentially a growing coalition of people who are saying, ‘This research is really hard to do ethically. Why is anyone doing it? Why is the scientific community saying this is okay?’ Of course, companies and governments will do what they will do and they should be sanctioned by society and the law, and there’s not much researchers can do about that other than speak out against it. But in their own scientific studies, researchers need to think a lot more carefully about what exactly they’re doing with their facial recognition work.</p><p><b>Host: Benjamin Thompson</b></p><p>And to get a sense of what researchers actually think about what they’re doing, Richard, you asked them. </p><p><b>Host: Richard Van Noorden</b></p><p>Yeah, so, earlier this year, just before COVID really took off, we asked about 500 researchers in facial recognition and AI and computer vision what they thought about these ethical concerns, and also what they thought about how the technology is used as a whole. And on the ethical concerns, broadly speaking, people were pretty uncomfortable and worried about them, which I think is positive that they were worried. So, more than 70% of people, for instance, thought that in the case of research on vulnerable people, for example, the Uyghurs that I mentioned, they thought that that basically was unethical or could be unethical even if you had consent. In the question of whether facial recognition researchers should get consent of people in the photos that they’re training their systems with, this was much more split. Only 40% of people thought that scientists should get informed consent. Still, higher than I might have thought given that after all, a lot of the datasets that we’re talking about here are public photos.</p><p><b>Host: Benjamin Thompson</b></p><p>So, still quite a divided field then in this case.</p><p><b>Host: Richard Van Noorden</b></p><p>Yeah, still divided because if these online photos have licenses saying they’re free to use, why not use them? A lot of researchers still think that, and it’s also very difficult to see how to reach out to these people. You don’t necessarily know who they are just because you have seen a number of pictures of their face or if there’s a label. And so, I think researchers are still really working this idea through, to be honest. They are a bit clearer on what should be done about studies that try to pick out sensitive, personal characteristics of people from their photo. A lot of them feel that informed consent is needed here or there should be discussions with the groups affected beforehand. And when asked what should the scientific community do about some of these ethically questionable studies, a lot of people thought that there should be ethical peer review in conferences and journals as we talked about, and essentially that we should start insisting that human subject research ethics forms parts of the peer review process.</p><p><b>Host: Benjamin Thompson</b></p><p>But is that maybe shifting the responsibility from the researchers themselves to, I mean, I use the word gatekeepers loosely, but who publish the papers and who run the conferences?</p><p><b>Host: Richard Van Noorden</b></p><p>Well, I think it’s saying that the community as a whole needs to instil more ethical review in the way it’s working because the people who run the conferences are usually researchers, and even the people that run the journals are almost always researchers as well, in terms of the people who are accepting the papers, and so bringing those ethical review processes in is something that I think a lot of people want. People are quite worried also about institutional review boards, these ethics bodies that consider research on human subjects, which we’re very familiar with for medical research. For computer science, less so. A lot of people thought that these facial recognition studies should be basically go through these institutional review boards, but many of them felt these boards are not very well equipped to judge ethical issues around this kind of research because the harms we’re talking about could be sort of harms to a whole group, not harms to an individual as such. If you’re trying to create something to spot someone’s sexuality from their photo, the fact of that existing is probably more likely to harm a whole group of people who can now be singled out or even if the technology doesn’t work, the idea that it might is harmful as well, potentially. So, these are more sort of subtle harms. These are not direct medical harms to a participant in a research study. These are the subtle harms in society, and so people were not sure that IRBs whilst are well equipped to consider these and so you might get a study pass ethical review and it would be a bit of a tick-box exercise. It’s not really deep reflection.</p><p><b>Host: Benjamin Thompson</b></p><p>At the start of the show, we heard about the Ada Lovelace Institute here in the UK and how they were talking to the public about their views on facial recognition technology and how it’s used, and there was maybe the feeling that in some cases, the pace of this technology is outstripping the regulation. Do you think that’s part of the problem here is that things are moving so fast that ethical review boards or whatever you have are struggling to keep up?</p><p><b>Host: Richard Van Noorden</b></p><p>Oh, completely. I mean, it’s moved around so quickly in the last few years that I don’t think it’s necessarily anyone’s fault, it’s just an appreciation that a lot more attention needs to be paid to this. In our survey, we also just asked the researchers, ‘What do you think about the ways that facial recognition is used? What’s comfortable and what’s uncomfortable?’ And I was very interested to know that the answers actually mimicked pretty closely what the Ada Lovelace Institute found when they did a much larger survey, a sort of nationally representative survey of 4,000 British people. And both our researchers and the people who answered the Ada Lovelace Institute’s survey where fairly comfortable with the idea of police using this to probe to find suspects of a crime that have been committed. This is sort of very much couched in assuming that there’s extra regulation in place, of course. And they’re also fairly comfortable with it being used in airports to check our identities, being used with smartphones, and they were very uncomfortable with the idea that this stuff could be used in work to check your attendance or even in interviews to see if you have characteristics suitable for the company, which is happening. Very uncomfortable with it being used in schools. Essentially, very uncomfortable when they couldn’t really see what the public benefit of using the technology was. If the benefit just accrues to the private company that’s in control of the tech, people are not very happy about that.</p><p><b>Host: Benjamin Thompson</b></p><p>Well, Richard, we’ve heard a lot today about facial recognition technologies. I think it’s fair to say that facial recognition technology isn’t likely to go away anytime soon. So, where does it go, Richard? How can we make sure that it’s used ‘for good’, I suppose?</p><p><b>Host: Richard Van Noorden</b></p><p>So, we are seeing lots of pushback and no doubt concerns about privacy and ethics and so on are going to grow. I think that we’re going to see a lot more detailed case-by-case dissection of when facial recognition is useful and when it is not because talking In generalities doesn’t usually get you down to the fine details of what is okay and what isn’t okay. And it’s all going to be down to having people really engaged with the technology and really understanding how it’s used and why it’s used, and I’m very encouraged by the work that the Ada Lovelace Institute is doing because they’re using these citizens’ biometric councils to actually ask people what they think in a very detailed way how facial recognition technology is used. Because ultimately, this technology is going to change our society. It’s going to change the way that our societies can be policed and the way that states can monitor what is going on. It’s going to affect people’s privacy and ultimately, we need to ask everyone whether they feel comfortable about their society changing in this way, and that’s the kind of debate that we’re going to need in order to use these technologies safely and constructively. And if we don’t have that debate, this could end up in a situation that probably many societies don’t really want to go in, but we could see ourselves getting their by default. So, we need to stop and consider this, change regulations, change legislation, to make sure that this technology is working for all of us rather than just for the people who are behind the cameras.</p><p><b>Host: Benjamin Thompson</b></p><p>Well, Richard, let’s leave it there then. Thank you so much for joining me today. Where can listeners find out more about facial recognition technology and the results of the survey, for example?</p><p><b>Host: Richard Van Noorden</b></p><p>Yeah, our survey results and the articles on facial recognition technology are all online, explaining how it works and where it’s used and researchers’ ethical concerns, and you can find them all at nature.com/news.</p><p><b>Host: Benjamin Thompson</b></p><p>And one last thing from us. Obviously, no Coronapod in today’s show, but keep an eye on the podcast feed later in the week for the latest episode of that, where Noah will be talking to <i>Nature</i>’s Heidi Ledford about the drop in death rates and touching on the latest vaccine news. If you’d like to get in contact with us, you can reach out to us on Twitter – @NaturePodcast – or on email – we’re podcast@nature.com. I’m Benjamin Thompson.</p><p><b>Host: Richard Van Noorden</b></p><p>And I’m Richard Van Noorden. Thanks for listening.</p></div>
+                    
+                </div>
+
+            
+                <h2 class="small-space-below temporary-class-to-handle-titles-visibility u-hide-print" id="related-articles">Related Articles</h2>
+                
+    <ul class="c-article-related-articles u-clearfix u-hide-print">
+        
+            <li class="c-article-related-articles__item u-clearfix">
+                <h3 class="c-article-related-articles__title">
+                    <a href="https://www.nature.com/articles/d41586-020-03188-2" data-track="click" data-track-label="related article (rank:0)">
+                        
+                            <img class="c-article-related-articles__img" loading="lazy" src="//media.nature.com/lw100/magazine-assets/d41586-020-03271-8/d41586-020-03271-8_18592850.jpg" alt="">
+                        
+                        Resisting the rise of facial recognition
+                    </a>
+                </h3>
+            </li>
+        
+            <li class="c-article-related-articles__item u-clearfix">
+                <h3 class="c-article-related-articles__title">
+                    <a href="https://www.nature.com/articles/d41586-020-03187-3" data-track="click" data-track-label="related article (rank:1)">
+                        
+                            <img class="c-article-related-articles__img" loading="lazy" src="//media.nature.com/lw100/magazine-assets/d41586-020-03271-8/d41586-020-03271-8_18592874.jpg" alt="">
+                        
+                        The ethical questions that haunt facial-recognition research
+                    </a>
+                </h3>
+            </li>
+        
+    </ul>
+
+            
+            
+            
+                <h2 class="small-space-below temporary-class-to-handle-titles-visibility u-hide-print" id="subjects">Subjects</h2>
+                
+    <ul class="c-article-subjects u-clearfix u-hide-print">
+        
+            <li class="c-article-subjects__item">
+                <a href="/subjects/ethics" data-track="click" data-track-label="subject (rank:0)">Ethics</a>
+            </li>
+        
+            <li class="c-article-subjects__item">
+                <a href="/subjects/information-technology" data-track="click" data-track-label="subject (rank:1)">Information technology</a>
+            </li>
+        
+            <li class="c-article-subjects__item">
+                <a href="/subjects/machine-learning" data-track="click" data-track-label="subject (rank:2)">Machine learning</a>
+            </li>
+        
+            <li class="c-article-subjects__item">
+                <a href="/subjects/computer-science" data-track="click" data-track-label="subject (rank:3)">Computer science</a>
+            </li>
+        
+    </ul>
+
+            <section class="c-article-latest-content__container c-latest-content mt40 hide-print" data-simple-tab data-tab-group  data-component-id="latest-news" data-track="in-view" data-track-action="in-view" data-track-category="latest content" data-track-label="visible">
+    <div id="latest-content" role="tablist">
+        <h2 class="c-article-latest-content__title">Latest on:</h2>
+        <div class="cleared">
+            
+                <div id="latest-content-0" class="c-latest-content__container" data-container>
+                    <button id="latest-content-0-head" class="c-latest-content__category c-latest-content__switch" data-switch role="tab"
+                       aria-controls="latest-content-0-content" data-track="click" data-track-label="latest tag (rank:0)">Ethics</button>
+                    <div id="latest-content-0-content" class="c-latest-content__item-container" role="tabpanel">
+                        <div class="u-flex__container--lc" aria-labelledby="author-affiliation-news-0-head" data-content>
+                            
+                                <article  class="c-latest-content__item box-sizing u-flex__item">
+                                    <a class="c-latest-content__link" href="http://www.nature.com/articles/d41586-022-00785-1" data-track="click" data-track-label="latest magazine (tag:0) (rank:0)">
+                                        
+                                        <h3 class="u-h3">Votes show Swiss public still supports some animal research</h3>
+                                        <p><span class="c-latest-content__content-type sans-serif">Correspondence</span> <span class="c-latest-content__date sans-serif"><time>22 MAR 22</time></span></p>
+                                    </a>
+                                </article>
+                            
+                                <article  class="c-latest-content__item box-sizing u-flex__item">
+                                    <a class="c-latest-content__link" href="http://www.nature.com/articles/d41586-022-00793-1" data-track="click" data-track-label="latest magazine (tag:0) (rank:1)">
+                                        
+                                            <img class="c-latest-content__image" src="https://images.nature.com/w140h79/magazine-assets/d41586-022-00793-1/d41586-022-00793-1_20227972.jpg" alt="The rise of citational justice: how scholars are making references fairer">
+                                        
+                                        <h3 class="u-h3">The rise of citational justice: how scholars are making references fairer</h3>
+                                        <p><span class="c-latest-content__content-type sans-serif">News Feature</span> <span class="c-latest-content__date sans-serif"><time>22 MAR 22</time></span></p>
+                                    </a>
+                                </article>
+                            
+                                <article  class="c-latest-content__item box-sizing u-flex__item">
+                                    <a class="c-latest-content__link" href="http://www.nature.com/articles/d41586-022-00787-z" data-track="click" data-track-label="latest magazine (tag:0) (rank:2)">
+                                        
+                                            <img class="c-latest-content__image" src="https://images.nature.com/w140h79/magazine-assets/d41586-022-00787-z/d41586-022-00787-z_20237956.jpg" alt="The alarming rise of complex genetic testing in human embryo selection">
+                                        
+                                        <h3 class="u-h3">The alarming rise of complex genetic testing in human embryo selection</h3>
+                                        <p><span class="c-latest-content__content-type sans-serif">Editorial</span> <span class="c-latest-content__date sans-serif"><time>21 MAR 22</time></span></p>
+                                    </a>
+                                </article>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="latest-content-1" class="c-latest-content__container" data-container>
+                    <button id="latest-content-1-head" class="c-latest-content__category c-latest-content__switch" data-switch role="tab"
+                       aria-controls="latest-content-1-content" data-track="click" data-track-label="latest tag (rank:1)">Information technology</button>
+                    <div id="latest-content-1-content" class="c-latest-content__item-container" role="tabpanel">
+                        <div class="u-flex__container--lc" aria-labelledby="author-affiliation-news-1-head" data-content>
+                            
+                                <article  class="c-latest-content__item box-sizing u-flex__item">
+                                    <a class="c-latest-content__link" href="http://www.nature.com/articles/d41586-022-00858-1" data-track="click" data-track-label="latest magazine (tag:1) (rank:0)">
+                                        
+                                            <img class="c-latest-content__image" src="https://images.nature.com/w140h79/magazine-assets/d41586-022-00858-1/d41586-022-00858-1_20249636.jpg" alt="Breaking into the black box of artificial intelligence">
+                                        
+                                        <h3 class="u-h3">Breaking into the black box of artificial intelligence</h3>
+                                        <p><span class="c-latest-content__content-type sans-serif">Outlook</span> <span class="c-latest-content__date sans-serif"><time>29 MAR 22</time></span></p>
+                                    </a>
+                                </article>
+                            
+                                <article  class="c-latest-content__item box-sizing u-flex__item">
+                                    <a class="c-latest-content__link" href="http://www.nature.com/articles/d41586-022-00339-5" data-track="click" data-track-label="latest magazine (tag:1) (rank:1)">
+                                        
+                                            <img class="c-latest-content__image" src="https://images.nature.com/w140h79/magazine-assets/d41586-022-00339-5/d41586-022-00339-5_20106864.jpg" alt="The race to save the Internet from quantum hackers">
+                                        
+                                        <h3 class="u-h3">The race to save the Internet from quantum hackers</h3>
+                                        <p><span class="c-latest-content__content-type sans-serif">News Feature</span> <span class="c-latest-content__date sans-serif"><time>08 FEB 22</time></span></p>
+                                    </a>
+                                </article>
+                            
+                                <article  class="c-latest-content__item box-sizing u-flex__item">
+                                    <a class="c-latest-content__link" href="http://www.nature.com/articles/d41586-021-03627-8" data-track="click" data-track-label="latest magazine (tag:1) (rank:2)">
+                                        
+                                            <img class="c-latest-content__image" src="https://images.nature.com/w140h79/magazine-assets/d41586-021-03627-8/d41586-021-03627-8_19919050.jpg" alt="How remouldable computer hardware is speeding up science">
+                                        
+                                        <h3 class="u-h3">How remouldable computer hardware is speeding up science</h3>
+                                        <p><span class="c-latest-content__content-type sans-serif">Technology Feature</span> <span class="c-latest-content__date sans-serif"><time>07 DEC 21</time></span></p>
+                                    </a>
+                                </article>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="latest-content-2" class="c-latest-content__container" data-container>
+                    <button id="latest-content-2-head" class="c-latest-content__category c-latest-content__switch" data-switch role="tab"
+                       aria-controls="latest-content-2-content" data-track="click" data-track-label="latest tag (rank:2)">Machine learning</button>
+                    <div id="latest-content-2-content" class="c-latest-content__item-container" role="tabpanel">
+                        <div class="u-flex__container--lc" aria-labelledby="author-affiliation-news-2-head" data-content>
+                            
+                                <article  class="c-latest-content__item box-sizing u-flex__item">
+                                    <a class="c-latest-content__link" href="http://www.nature.com/articles/d41586-022-00858-1" data-track="click" data-track-label="latest magazine (tag:2) (rank:0)">
+                                        
+                                            <img class="c-latest-content__image" src="https://images.nature.com/w140h79/magazine-assets/d41586-022-00858-1/d41586-022-00858-1_20249636.jpg" alt="Breaking into the black box of artificial intelligence">
+                                        
+                                        <h3 class="u-h3">Breaking into the black box of artificial intelligence</h3>
+                                        <p><span class="c-latest-content__content-type sans-serif">Outlook</span> <span class="c-latest-content__date sans-serif"><time>29 MAR 22</time></span></p>
+                                    </a>
+                                </article>
+                            
+                                <article  class="c-latest-content__item box-sizing u-flex__item">
+                                    <a class="c-latest-content__link" href="http://www.nature.com/articles/d41586-022-00752-w" data-track="click" data-track-label="latest magazine (tag:2) (rank:1)">
+                                        
+                                            <img class="c-latest-content__image" src="https://images.nature.com/w140h79/magazine-assets/d41586-022-00752-w/d41586-022-00752-w_20220486.png" alt="AI reads Greek, COVID’s catastrophe — the week in infographics">
+                                        
+                                        <h3 class="u-h3">AI reads Greek, COVID’s catastrophe — the week in infographics</h3>
+                                        <p><span class="c-latest-content__content-type sans-serif">News</span> <span class="c-latest-content__date sans-serif"><time>15 MAR 22</time></span></p>
+                                    </a>
+                                </article>
+                            
+                                <article  class="c-latest-content__item box-sizing u-flex__item">
+                                    <a class="c-latest-content__link" href="http://www.nature.com/articles/d41586-022-00641-2" data-track="click" data-track-label="latest magazine (tag:2) (rank:2)">
+                                        
+                                            <img class="c-latest-content__image" src="https://images.nature.com/w140h79/magazine-assets/d41586-022-00641-2/d41586-022-00641-2_20197194.png" alt="AI minds the gap and fills in missing Greek inscriptions">
+                                        
+                                        <h3 class="u-h3">AI minds the gap and fills in missing Greek inscriptions</h3>
+                                        <p><span class="c-latest-content__content-type sans-serif">News &amp; Views</span> <span class="c-latest-content__date sans-serif"><time>09 MAR 22</time></span></p>
+                                    </a>
+                                </article>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+            <div class="js-jobs-career-wrapper u-hide-print">
+                
+    <div class="u-mb-48" data-track="in-view" data-track-action="in-view" data-track-category="career" data-track-label="visible">
+        <div class="c-section-heading">
+            <h2>
+                <img class="u-vertical-align-baseline"
+                     src="/static/images/logos/nature-careers-logo.svg"
+                     width="195"
+                     height="23"
+                     alt="Nature Careers">
+            </h2>
+        </div>
+        <h3 class="app-careers-row__title">
+            <a href="https://www.nature.com/naturecareers/"
+               class="u-link-inherit u-display-inline-flex u-align-items-center"
+               data-track="click" data-track-action="section-link" data-track-label="jobs list title">
+                Jobs
+                <svg class="u-icon u-mt-2" aria-hidden="true" focusable="false" height="18" width="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.08573416 5.70052374 2.48162731-2.4816273c.39282216-.39282216 1.02197315-.40056173 1.40306523-.01946965.39113012.39113012.3914806 1.02492687-.00014045 1.41654791l-4.17620791 4.17620792c-.39120769.39120768-1.02508144.39160691-1.41671995-.0000316l-4.17639421-4.1763942c-.39122513-.39122514-.39767006-1.01908149-.01657797-1.40017357.39113012-.39113012 1.02337105-.3930364 1.41951348.00310603l2.48183447 2.48183446.99770587 1.01367533z" transform="matrix(0 -1 1 0 2.081146 11.085734)"/></svg>
+            </a>
+        </h3>
+        <div class="app-careers-row__listing">
+            <ul class="c-list-group c-list-group--md c-list-group--flush c-list-group--bordered u-mb-16">
+                
+                    <li class="c-list-group__item u-position-relative u-display-flex u-flex-direction-column" itemscope itemtype="http://schema.org/JobPosting">
+                        <h4 class="u-mb-8" itemprop="title">
+                            <a href="https://www.nature.com/naturecareers/job/director-of-the-center-for-environmental-human-toxicology-university-of-florida-uf-756436"
+                               class="u-link-inherit u-link-faux-block"
+                               itemprop="url" data-track="click" data-track-action="Rank:(0)"
+                               data-track-category="job-list" data-track-label="756436">
+                                Director of the Center for Environmental & Human Toxicology
+                            </a>
+                        </h4>
+                        <div class="u-mt-auto c-meta">
+                            <p class="u-mb-0" itemprop="hiringOrganization"itemscope itemtype="http://schema.org/Organization"><span itemprop="name">University of Florida (UF)</span></p>
+                                <p class="u-mb-0">Gainesville, FL, United States</p>
+                            
+                        </div>
+                    </li>
+                
+                    <li class="c-list-group__item u-position-relative u-display-flex u-flex-direction-column" itemscope itemtype="http://schema.org/JobPosting">
+                        <h4 class="u-mb-8" itemprop="title">
+                            <a href="https://www.nature.com/naturecareers/job/senior-laboratory-research-scientist-molecular-cell-biology-of-autophagy-lab-francis-crick-institute-756435"
+                               class="u-link-inherit u-link-faux-block"
+                               itemprop="url" data-track="click" data-track-action="Rank:(1)"
+                               data-track-category="job-list" data-track-label="756435">
+                                Senior Laboratory Research Scientist - Molecular Cell Biology of Autophagy lab
+                            </a>
+                        </h4>
+                        <div class="u-mt-auto c-meta">
+                            <p class="u-mb-0" itemprop="hiringOrganization"itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Francis Crick Institute</span></p>
+                                <p class="u-mb-0">London, United Kingdom</p>
+                            
+                        </div>
+                    </li>
+                
+                    <li class="c-list-group__item u-position-relative u-display-flex u-flex-direction-column" itemscope itemtype="http://schema.org/JobPosting">
+                        <h4 class="u-mb-8" itemprop="title">
+                            <a href="https://www.nature.com/naturecareers/job/brf-gems-research-scientist-francis-crick-institute-756434"
+                               class="u-link-inherit u-link-faux-block"
+                               itemprop="url" data-track="click" data-track-action="Rank:(2)"
+                               data-track-category="job-list" data-track-label="756434">
+                                BRF GeMS Research Scientist
+                            </a>
+                        </h4>
+                        <div class="u-mt-auto c-meta">
+                            <p class="u-mb-0" itemprop="hiringOrganization"itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Francis Crick Institute</span></p>
+                                <p class="u-mb-0">London, United Kingdom</p>
+                            
+                        </div>
+                    </li>
+                
+                    <li class="c-list-group__item u-position-relative u-display-flex u-flex-direction-column" itemscope itemtype="http://schema.org/JobPosting">
+                        <h4 class="u-mb-8" itemprop="title">
+                            <a href="https://www.nature.com/naturecareers/job/associate-or-senior-editor-nature-biotechnology-springer-nature-756433"
+                               class="u-link-inherit u-link-faux-block"
+                               itemprop="url" data-track="click" data-track-action="Rank:(3)"
+                               data-track-category="job-list" data-track-label="756433">
+                                Associate or Senior Editor, Nature Biotechnology
+                            </a>
+                        </h4>
+                        <div class="u-mt-auto c-meta">
+                            <p class="u-mb-0" itemprop="hiringOrganization"itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Springer Nature</span></p>
+                                <p class="u-mb-0">New York, NY, United States</p>
+                            
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            </div>
+        </main>
+        <aside class="c-article-extras u-hide-print">
+            
+                
+                    <noscript>
+                        
+<div class="c-nature-box c-nature-box--side " data-component="entitlement-box">
+    
+        <p class="c-nature-box__text js-text">You have full access to this article via your institution.</p>
+        
+    
+    <div class="c-pdf-download u-clear-both">
+        <a href="/articles/d41586-020-03271-8.pdf" class="c-pdf-download__link" data-article-pdf="true" data-readcube-pdf-url="true" data-test="download-pdf" data-draft-ignore="true" data-track="click" data-track-action="download pdf" data-track-label="link" data-track-external>
+            <span>Download PDF</span>
+            <svg aria-hidden="true" focusable="false" width="16" height="16" class="u-icon"><use xlink:href="#global-icon-download"/></svg>
+        </a>
+    </div>
+    
+
+    
+</div>
+
+                    </noscript>
+
+                    <div class="c-nature-box c-nature-box--side u-display-none u-hide-print" aria-hidden="true" data-component="entitlement-box"
+    id=entitlement-box-right-column
+    
+    >
+
+    
+        <p class="c-nature-box__text js-text u-display-none" aria-hidden="true"></p>
+        
+        
+            
+        
+    
+</div>
+
+                
+            
+
+            
+                <h2 class="c-article-extras-heading">Related Articles</h2>
+                
+    <ul class="c-article-related-articles u-clearfix u-hide-print">
+        
+            <li class="c-article-related-articles__item u-clearfix">
+                <h3 class="c-article-related-articles__title">
+                    <a href="https://www.nature.com/articles/d41586-020-03188-2" data-track="click" data-track-label="related article (rank:0)">
+                        
+                            <img class="c-article-related-articles__img" loading="lazy" src="//media.nature.com/lw100/magazine-assets/d41586-020-03271-8/d41586-020-03271-8_18592850.jpg" alt="">
+                        
+                        Resisting the rise of facial recognition
+                    </a>
+                </h3>
+            </li>
+        
+            <li class="c-article-related-articles__item u-clearfix">
+                <h3 class="c-article-related-articles__title">
+                    <a href="https://www.nature.com/articles/d41586-020-03187-3" data-track="click" data-track-label="related article (rank:1)">
+                        
+                            <img class="c-article-related-articles__img" loading="lazy" src="//media.nature.com/lw100/magazine-assets/d41586-020-03271-8/d41586-020-03271-8_18592874.jpg" alt="">
+                        
+                        The ethical questions that haunt facial-recognition research
+                    </a>
+                </h3>
+            </li>
+        
+    </ul>
+
+            
+            
+            
+                <h2 class="c-article-extras-heading">Subjects</h2>
+                
+    <ul class="c-article-subjects u-clearfix u-hide-print">
+        
+            <li class="c-article-subjects__item">
+                <a href="/subjects/ethics" data-track="click" data-track-label="subject (rank:0)">Ethics</a>
+            </li>
+        
+            <li class="c-article-subjects__item">
+                <a href="/subjects/information-technology" data-track="click" data-track-label="subject (rank:1)">Information technology</a>
+            </li>
+        
+            <li class="c-article-subjects__item">
+                <a href="/subjects/machine-learning" data-track="click" data-track-label="subject (rank:2)">Machine learning</a>
+            </li>
+        
+            <li class="c-article-subjects__item">
+                <a href="/subjects/computer-science" data-track="click" data-track-label="subject (rank:3)">Computer science</a>
+            </li>
+        
+    </ul>
+
+            
+           
+    
+<div id="div-gpt-ad-right-2"
+     class="div-gpt-ad medium-rectangle c-ad c-ad--300x250 advert js-ad hide-print grade-c-hide"
+     data-ad-type="right"
+     data-pa11y-ignore
+     data-gpt
+     data-gpt-unitpath="/285/nature.com/article"
+     data-gpt-sizes="300x250"
+     data-gpt-targeting="pos=right;artid=/articles/d41586-020-03271-8;path=/articles/d41586-020-03271-8"
+     >
+    <noscript>
+        <a href="//pubads.g.doubleclick.net/gampad/jump?iu=/285/nature.com/article&amp;sz=300x250&amp;c=-1812113784&amp;t=pos%3Dright%26artid%3D/articles/d41586-020-03271-8">
+            <img data-test="gpt-advert-fallback-img"
+                 src="//pubads.g.doubleclick.net/gampad/ad?iu=/285/nature.com/article&amp;sz=300x250&amp;c=-1812113784&amp;t=pos%3Dright%26artid%3D/articles/d41586-020-03271-8"
+                 alt="Advertisement"
+                 width="300"
+                 height="250"/>
+        </a>
+    </noscript>
+</div>
+
+
+           <div class="nature-briefing--sidebar bordered-container shrink--aside hide-print">
+    
+
+    <div class="nature-briefing nature-briefing-box u-hide-print" data-component-id="nature-briefing-box" data-track="in-view" data-track-action="in-view" data-track-category="nature briefing" data-track-label="sidebar box visible">
+        <div class="nature-briefing-box__header">
+            <h2 class="nature-briefing-box__headline">Sign up to Nature Briefing</h2>
+            <p class="nature-briefing-box__standfirst">An essential round-up of science news, opinion and analysis, delivered to your inbox every weekday.</p>
+        </div>
+        <form action="/briefing/signup/formfeedback" method="post" class="nature-briefing-box__form" data-location="box" data-track="submit" data-track-action="transmit-form">
+            <input id="briefing-box-signup-form-sidebar-input-track-originReferralPoint" type="hidden" name="track_originReferralPoint" value="DirectEmailBox-sidebar">
+            <input id="briefing-box-signup-form-sidebar-input-track-formType" type="hidden" name="track_formType" value="DirectEmailBox">
+            <label class="nature-briefing-box__input-label" for="box-sidebar-EmailAddressInput">Email address</label>
+            <input class="nature-briefing-box__input-input" type="email" id="box-sidebar-EmailAddressInput" name="email" value="" placeholder="e.g. jo.smith@university.ac.uk" required="true" aria-required="true" data-test-element="briefing-box-email-input">
+
+            <div class="nature-briefing-box__checkbox-wrapper" role="group">
+                <input class="nature-briefing-box__checkbox-checkbox" id="gdpr-briefing-box-sidebar-checkbox" type="checkbox" name="gdpr" value="1" data-test-element="briefing-box-gdpr-checkbox" required>
+                <label class="nature-briefing-box__checkbox-label" for="gdpr-briefing-box-sidebar-checkbox">Yes! Sign me up to receive the daily <em>Nature Briefing</em> email. I agree my information will be processed in accordance with the <em>Nature</em> and Springer Nature Limited <a href="https://www.nature.com/info/privacy">Privacy Policy</a>.</label>
+            </div>
+
+            <button type="submit" class="nature-briefing-box__submit-button c-btn--squared" data-test-element="briefing-box-signup-button">Sign up</button>
+
+        </form>
+    </div>
+
+
+</div>
+
+        </aside>
+
+        <div data-microformat-only="" itemscope="" itemprop="publisher" itemtype="https://schema.org/Organization">
+            <meta content="Macmillan Publishers Limited, part of Springer Nature" itemprop="name"/>
+        </div>
+        <div data-microformat-only="" itemscope="" itemprop="author" itemtype="https://schema.org/Organization">
+            <meta content="Nature Editorial" itemprop="name"/>
+        </div>
+        <img src="/platform/track/article/d41586-020-03271-8" width="1" height="1" alt="" class="visually-hidden"/>
+    </div>
+</article>
+        
+
+<div class="c-site-messages message hide u-hide-print c-site-messages--nature-briefing c-site-messages--nature-briefing-email-variant c-site-messages--nature-briefing-redesign-2020 sans-serif"
+data-component-id="nature-briefing-banner"
+data-component-expirydays="30"
+data-component-trigger-scroll-percentage="15"
+data-track="in-view"
+data-track-action="in-view"
+data-track-category="nature briefing"
+data-track-label="redesign banner visible">
+
+    
+    <div class="c-site-messages__banner-large">
+
+        
+<div class="c-site-messages__close-container">
+    <button class="c-site-messages__close"
+        data-track="click"
+        data-track-category="nature briefing"
+        data-track-label="redesign banner dismiss">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="25px" height="25px" focusable="false" aria-hidden="true" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>Close banner</title>
+            <defs></defs>
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <rect opacity="0" x="0" y="0" width="25" height="25"></rect>
+                <path d="M6.29679575,16.2772478 C5.90020818,16.6738354 5.90240728,17.3100587 6.29617427,17.7038257 C6.69268654,18.100338 7.32864195,18.0973145 7.72275218,17.7032043 L12,13.4259564 L16.2772478,17.7032043 C16.6738354,18.0997918 17.3100587,18.0975927 17.7038257,17.7038257 C18.100338,17.3073135 18.0973145,16.671358 17.7032043,16.2772478 L13.4259564,12 L17.7032043,7.72275218 C18.0997918,7.32616461 18.0975927,6.68994127 17.7038257,6.29617427 C17.3073135,5.89966201 16.671358,5.90268552 16.2772478,6.29679575 L12,10.5740436 L7.72275218,6.29679575 C7.32616461,5.90020818 6.68994127,5.90240728 6.29617427,6.29617427 C5.89966201,6.69268654 5.90268552,7.32864195 6.29679575,7.72275218 L10.5740436,12 L6.29679575,16.2772478 Z" fill="#ffffff"></path>
+            </g>
+        </svg>
+        <span class="visually-hidden">Close</span>
+    </button>
+</div>
+
+
+        <div class="c-site-messages__form-container">
+
+            <div class="grid grid-12 last">
+                <div class="grid grid-4">
+                    <img alt="Nature Briefing" src="/static/images/logos/nature-briefing-logo-n150-white.svg" width="250" height="40">
+                    <p class="c-site-messages--nature-briefing__strapline extra-tight-line-height">Sign up for the <em>Nature Briefing</em> newsletter — what matters in science, free to your inbox daily.</p>
+                </div>
+                <div class="grid grid-8 last">
+                    <form action="/briefing/signup/formfeedback" method="post" data-location="banner" data-track="submit" data-track-action="transmit-form">
+                        <input id="briefing-banner-signup-form-input-track-originReferralPoint" type="hidden" name="track_originReferralPoint" value="DirectEmailBannerRedesign2020">
+                        <input id="briefing-banner-signup-form-input-track-formType" type="hidden" name="track_formType" value="DirectEmailBanner">
+                        <label class="nature-briefing-banner__email-label" for="banner-EmailAddressInput">Email address</label>
+
+                        <div class="nature-briefing-banner__email-wrapper">
+                            <input class="nature-briefing-banner__email-input box-sizing text14" type="email" id="banner-EmailAddressInput" name="email" value="" placeholder="e.g. jo.smith@university.ac.uk" required="true" aria-required="true" data-test-element="briefing-emailbanner-email-input">
+                            <button type="submit" class="nature-briefing-banner__submit-button box-sizing text14" data-test-element="briefing-emailbanner-signup-button">Sign up</button>
+                        </div>
+
+                        <div class="nature-briefing-banner__checkbox-wrapper grid grid-12 last">
+                            <input class="nature-briefing-banner__checkbox-checkbox" id="gdpr-briefing-banner-checkbox" type="checkbox" name="gdpr" value="1" data-test-element="briefing-emailbanner-gdpr-checkbox" required>
+                            <label class="nature-briefing-banner__checkbox-label box-sizing text13 sans-serif block tighten-line-height" for="gdpr-briefing-banner-checkbox">I agree my information will be processed in accordance with the <em>Nature</em> and Springer Nature Limited <a href="https://www.nature.com/info/privacy">Privacy Policy</a>.</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <div class="c-site-messages__banner-small">
+
+        
+<div class="c-site-messages__close-container">
+    <button class="c-site-messages__close"
+        data-track="click"
+        data-track-category="nature briefing"
+        data-track-label="redesign banner dismiss">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="25px" height="25px" focusable="false" aria-hidden="true" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>Close banner</title>
+            <defs></defs>
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <rect opacity="0" x="0" y="0" width="25" height="25"></rect>
+                <path d="M6.29679575,16.2772478 C5.90020818,16.6738354 5.90240728,17.3100587 6.29617427,17.7038257 C6.69268654,18.100338 7.32864195,18.0973145 7.72275218,17.7032043 L12,13.4259564 L16.2772478,17.7032043 C16.6738354,18.0997918 17.3100587,18.0975927 17.7038257,17.7038257 C18.100338,17.3073135 18.0973145,16.671358 17.7032043,16.2772478 L13.4259564,12 L17.7032043,7.72275218 C18.0997918,7.32616461 18.0975927,6.68994127 17.7038257,6.29617427 C17.3073135,5.89966201 16.671358,5.90268552 16.2772478,6.29679575 L12,10.5740436 L7.72275218,6.29679575 C7.32616461,5.90020818 6.68994127,5.90240728 6.29617427,6.29617427 C5.89966201,6.69268654 5.90268552,7.32864195 6.29679575,7.72275218 L10.5740436,12 L6.29679575,16.2772478 Z" fill="#ffffff"></path>
+            </g>
+        </svg>
+        <span class="visually-hidden">Close</span>
+    </button>
+</div>
+
+
+        <div class="c-site-messages__content text14">
+            <span class="c-site-messages--nature-briefing__strapline strong">Get the most important science stories of the day, free in your inbox.</span>
+            <a class="nature-briefing__link text14 sans-serif"
+                data-track="click"
+                data-track-category="nature briefing"
+                data-track-label="redesign banner CTA to site"
+                data-test-element="briefing-banner-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                href="/briefing/signup/?origin=Nature&amp;originReferralPoint=EmailBanner">Sign up for Nature Briefing
+            </a>
+        </div>
+
+    </div>
+
+</div>
+    </div>
+</div>
+    <script>
+        if (window.config.mustardcut) {
+            window.onload = function () {
+                Array.prototype.slice.call(document.querySelectorAll(".magazine-infographic > iframe"))
+                        .forEach(function (element) {
+                            function listener(event) {
+                                if (event.data.height) {
+                                    if (element.id === event.data.requestData.id) {
+                                        element.setAttribute("height", event.data.height)
+                                    }
+                                }
+                            }
+
+                            window.addEventListener("message", listener);
+                            element.contentWindow.postMessage({name: "getHeight", id: element.id}, "*");
+                        });
+            }
+        }
+    </script>
+    <script>
+        var idp = {
+            hasNatureUserProof: function (hasProof) {
+                if (!hasProof) {
+                    document.getElementById("my-account").setAttribute("style", "display: none;");
+                    document.getElementById("login-button").setAttribute("style", "");
+                }
+            }
+        }
+    </script>
+
+    
+
+    
+
+    
+        
+    
+        <nav class="u-hide-print c-header-expander" aria-labelledby="Explore-content" data-test="Explore-content" id="explore" data-track-component="nature-150-split-header">
+            <div class="c-header-expander__container">
+                <h2 id="Explore-content" class="c-header-expander__heading u-js-hide">Explore content</h2>
+                <ul class="c-header-expander__list">
+                    
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/nature/research-articles"
+                                   data-track="click"
+                                   data-track-action="research articles"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Research articles
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/news"
+                                   data-track="click"
+                                   data-track-action="news"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    News
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/opinion"
+                                   data-track="click"
+                                   data-track-action="opinion"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Opinion
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/research-analysis"
+                                   data-track="click"
+                                   data-track-action="research analysis"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Research Analysis
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/careers"
+                                   data-track="click"
+                                   data-track-action="careers"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Careers
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/books-culture"
+                                   data-track="click"
+                                   data-track-action="books &amp; culture"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Books &amp; Culture
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/nature/podcasts"
+                                   data-track="click"
+                                   data-track-action="podcasts"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Podcasts
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/nature/videos"
+                                   data-track="click"
+                                   data-track-action="videos"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Videos
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/nature/current-issue"
+                                   data-track="click"
+                                   data-track-action="current issue"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Current issue
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/nature/browse-issues"
+                                   data-track="click"
+                                   data-track-action="browse issues"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Browse issues
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/nature/collections"
+                                   data-track="click"
+                                   data-track-action="collections"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Collections
+                                </a>
+                            </li>
+                        
+                            <li class="c-header-expander__item">
+                                <a class="c-header-expander__link"
+                                   href="/nature/browse-subjects"
+                                   data-track="click"
+                                   data-track-action="subjects"
+                                   data-track-label="link"
+                                   data-test="explore-nav-item">
+                                    Subjects
+                                </a>
+                            </li>
+                        
+                    
+                    
+                        <li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only">
+                            <a class="c-header-expander__link"
+                               href="https://www.facebook.com/Nature"
+                               data-track="click"
+                               data-track-action="facebook"
+                               data-track-label="link">Follow us on Facebook
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only">
+                            <a class="c-header-expander__link"
+                               href="https://twitter.com/nature"
+                               data-track="click"
+                               data-track-action="twitter"
+                               data-track-label="link">Follow us on Twitter
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only u-hide-at-lg">
+                            <a data-test="subscribe-button" class=c-header-expander__link"
+                               href="https://www.nature.com/nature/subscribe"
+                               data-track="click"
+                               data-track-action="subscribe"
+                               data-track-label="link">
+                                <span>Subscribe</span>
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only u-hide-at-lg">
+                            <a class="c-header-expander__link"
+                               href="https://www.nature.com/my-account/alerts/subscribe-journal?list-id&#x3D;1"
+                               rel="nofollow"
+                               data-track="click"
+                               data-track-action="Sign up for alerts"
+                               data-track-external
+                               data-track-label="link (mobile dropdown)">Sign up for alerts<svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m4 10h2.5c.27614237 0 .5.2238576.5.5s-.22385763.5-.5.5h-3.08578644l-1.12132034 1.1213203c-.18753638.1875364-.29289322.4418903-.29289322.7071068v.1715729h14v-.1715729c0-.2652165-.1053568-.5195704-.2928932-.7071068l-1.7071068-1.7071067v-3.4142136c0-2.76142375-2.2385763-5-5-5-2.76142375 0-5 2.23857625-5 5zm3 4c0 1.1045695.8954305 2 2 2s2-.8954305 2-2zm-5 0c-.55228475 0-1-.4477153-1-1v-.1715729c0-.530433.21071368-1.0391408.58578644-1.4142135l1.41421356-1.4142136v-3c0-3.3137085 2.6862915-6 6-6s6 2.6862915 6 6v3l1.4142136 1.4142136c.3750727.3750727.5857864.8837805.5857864 1.4142135v.1715729c0 .5522847-.4477153 1-1 1h-4c0 1.6568542-1.3431458 3-3 3-1.65685425 0-3-1.3431458-3-3z" fill="#fff"/></svg>
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only u-hide-at-lg">
+                            <a class="c-header-expander__link"
+                               href="http://feeds.nature.com/nature/rss/current"
+                               data-track="click"
+                               data-track-action="rss feed"
+                               data-track-label="link">
+                                <span>RSS feed</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+
+    
+        <nav class="u-hide-print c-header-expander" aria-labelledby="About-the-journal" id="about-the-journal" data-track-component="nature-150-split-header">
+            <div class="c-header-expander__container">
+                <h2 id="About-the-journal" class="c-header-expander__heading u-js-hide">About the journal</h2>
+                <ul class="c-header-expander__list">
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/journal-staff"
+                               data-track="click"
+                               data-track-action="journal staff"
+                               data-track-label="link">
+                                Journal Staff
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/editors"
+                               data-track="click"
+                               data-track-action="about the editors"
+                               data-track-label="link">
+                                About the Editors
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/journal-information"
+                               data-track="click"
+                               data-track-action="journal information"
+                               data-track-label="link">
+                                Journal Information
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/our-publishing-models"
+                               data-track="click"
+                               data-track-action="our publishing models"
+                               data-track-label="link">
+                                Our publishing models
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/editorial-values-statement"
+                               data-track="click"
+                               data-track-action="editorial values statement"
+                               data-track-label="link">
+                                Editorial Values Statement
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/journal-impact"
+                               data-track="click"
+                               data-track-action="journal impact"
+                               data-track-label="link">
+                                Journal Impact
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/awards"
+                               data-track="click"
+                               data-track-action="awards"
+                               data-track-label="link">
+                                Awards
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/contact"
+                               data-track="click"
+                               data-track-action="contact"
+                               data-track-label="link">
+                                Contact
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/editorial-policies"
+                               data-track="click"
+                               data-track-action="editorial policies"
+                               data-track-label="link">
+                                Editorial policies
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/history-of-nature"
+                               data-track="click"
+                               data-track-action="history of nature"
+                               data-track-label="link">
+                                History of Nature
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/send-a-news-tip"
+                               data-track="click"
+                               data-track-action="send a news tip"
+                               data-track-label="link">
+                                Send a news tip
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+
+    
+        <nav class="u-hide-print c-header-expander" aria-labelledby="Publish-with-us-label" id="publish-with-us" data-track-component="nature-150-split-header">
+            <div class="c-header-expander__container">
+                <h2 id="Publish-with-us-label" class="c-header-expander__heading u-js-hide">Publish with us</h2>
+                <ul class="c-header-expander__list">
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/for-authors"
+                               data-track="click"
+                               data-track-action="for authors"
+                               data-track-label="link">
+                                For Authors
+                            </a>
+                        </li>
+                    
+                        <li class="c-header-expander__item">
+                            <a class="c-header-expander__link"
+                               href="/nature/for-referees"
+                               data-track="click"
+                               data-track-action="for referees"
+                               data-track-label="link">
+                                For Referees
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="c-header-expander__item c-header-expander__item--keyline">
+                            <a class="c-header-expander__link"
+                               href="https://mts-nature.nature.com/"
+                               data-track="click"
+                               data-track-action="Submit manuscript"
+                               data-track-label="link"
+                               data-track-external>Submit manuscript<svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m15 0c1.1045695 0 2 .8954305 2 2v5.5c0 .27614237-.2238576.5-.5.5s-.5-.22385763-.5-.5v-5.5c0-.51283584-.3860402-.93550716-.8833789-.99327227l-.1166211-.00672773h-9v3c0 1.1045695-.8954305 2-2 2h-3v10c0 .5128358.38604019.9355072.88337887.9932723l.11662113.0067277h7.5c.27614237 0 .5.2238576.5.5s-.22385763.5-.5.5h-7.5c-1.1045695 0-2-.8954305-2-2v-10.17157288c0-.53043297.21071368-1.0391408.58578644-1.41421356l3.82842712-3.82842712c.37507276-.37507276.88378059-.58578644 1.41421356-.58578644zm-.5442863 8.18867991 3.3545404 3.35454039c.2508994.2508994.2538696.6596433.0035959.909917-.2429543.2429542-.6561449.2462671-.9065387-.0089489l-2.2609825-2.3045251.0010427 7.2231989c0 .3569916-.2898381.6371378-.6473715.6371378-.3470771 0-.6473715-.2852563-.6473715-.6371378l-.0010428-7.2231995-2.2611222 2.3046654c-.2531661.2580415-.6562868.2592444-.9065605.0089707-.24295423-.2429542-.24865597-.6576651.0036132-.9099343l3.3546673-3.35466731c.2509089-.25090888.6612706-.25227691.9135302-.00001728zm-.9557137-3.18867991c.2761424 0 .5.22385763.5.5s-.2238576.5-.5.5h-6c-.27614237 0-.5-.22385763-.5-.5s.22385763-.5.5-.5zm-8.5-3.587-3.587 3.587h2.587c.55228475 0 1-.44771525 1-1zm8.5 1.587c.2761424 0 .5.22385763.5.5s-.2238576.5-.5.5h-6c-.27614237 0-.5-.22385763-.5-.5s.22385763-.5.5-.5z" fill="#fff"/></svg>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+
+
+<div id="search-menu" class="c-header-expander c-header-expander--tray u-hide-print" data-track-component="nature-150-split-header">
+    <div class="c-header-expander__container">
+        <h2 class="u-visually-hidden">Search</h2>
+        <div data-test="inline-search">
+            <div class="c-search c-search--max-width u-mb-16">
+                <form action="/search"
+                      method="get"
+                      role="search"
+                      autocomplete="off"
+                      data-dynamic-track-label
+                      data-track="submit" data-track-action="search" data-track-label="form">
+                    <label class="c-header-expander__heading u-mb-8" for="keywords">Search articles by subject, keyword or author</label>
+                    <div class="c-search__field">
+                        <div class="c-search__input-container c-search__input-container--md">
+                            <input type="text"
+                               required
+                               class="c-search__input"
+                               id="keywords"
+                               name="q"
+                               value=""
+                               data-test="search-keywords">
+                        </div>
+
+                        <div class="c-search__select-container">
+                            <label for="results-from" class="u-visually-hidden">Show results from</label>
+                            <select id="results-from" name="journal" class="c-search__select">
+                                
+                                    <option value="" selected>All journals</option>
+                                
+                            </select>
+                        </div>
+                        <div class="c-search__button-container">
+                            <button type="submit" class="u-button u-button--primary u-button--full-width" data-test="search-submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="c-header-expander__keyline u-mb-16">
+            <p class="u-ma-0">
+                <a href="/search/advanced"
+                   data-track="click" data-track-action="advanced search" data-track-label="link">
+                    Advanced search
+                </a>
+            </p>
+        </div>
+        <h3 class="c-header-expander__heading">Quick links</h3>
+        <ul class="u-list-reset">
+            <li class="u-display-inline-block u-mr-24 u-mb-16"><a href="/subjects" data-track="click" data-track-action="explore articles by subject" data-track-label="link">Explore articles by subject</a></li>
+            <li class="u-display-inline-block u-mr-24 u-mb-16"><a href="/naturecareers" data-track="click" data-track-action="find a job" data-track-label="link">Find a job</a></li>
+            <li class="u-display-inline-block u-mr-24 u-mb-16"><a href="/authors/index.html" data-track="click" data-track-action="guide to authors" data-track-label="link">Guide to authors</a></li>
+            <li class="u-display-inline-block u-mr-24 u-mb-16"><a href="/authors/editorial_policies/" data-track="click" data-track-action="editorial policies" data-track-label="link">Editorial policies</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer class="composite-layer" itemscope itemtype="http://schema.org/Periodical">
+    <meta itemprop="publisher" content="Springer Nature">
+    
+    <div class="u-mt-16 u-mb-16">
+    <div class="u-container">
+        <div class="u-display-flex u-flex-wrap u-justify-content-space-between">
+            
+
+            <p class="c-meta u-ma-0 u-flex-shrink">
+                <span class="c-meta__item">
+                    Nature (<i>Nature</i>)
+                </span>
+                
+    
+    <span class="c-meta__item">
+        <abbr title="International Standard Serial Number">ISSN</abbr> <span itemprop="onlineIssn">1476-4687</span> (online)
+    </span>
+    
+
+
+                
+    
+    <span class="c-meta__item">
+        <abbr title="International Standard Serial Number">ISSN</abbr> <span itemprop="printIssn">0028-0836</span> (print)
+    </span>
+    
+
+            </p>
+        </div>
+    </div>
+</div>
+
+
+    <div>
+        <div class="c-footer">
+            <div class="u-container">
+                <div class="u-hide-print" data-track-component="footer">
+    <h2 class="u-visually-hidden">nature.com sitemap</h2>
+    <div class="c-footer__header">
+        <div class="c-footer__logo">
+            <img alt="Nature portfolio" src="/static/images/logos/nature-portfolio-white.svg" loading="lazy" width="200" height="31">
+        </div>
+        <ul class="c-menu c-menu--inherit u-mr-32">
+            <li class="c-menu__item"><a class="c-menu__link" href="https://www.nature.com/npg_/company_info/index.html" data-track="click" data-track-action="about us" data-track-label="link">About us</a></li>
+            <li class="c-menu__item"><a class="c-menu__link" href="https://www.nature.com/npg_/press_room/press_releases.html" data-track="click" data-track-action="press releases" data-track-label="link">Press releases</a></li>
+            <li class="c-menu__item"><a class="c-menu__link" href="https://press.nature.com/" data-track="click" data-track-action="press office" data-track-label="link">Press office</a></li>
+            <li class="c-menu__item"><a class="c-menu__link" href="https://support.nature.com/support/home" data-track="click" data-track-action="contact us" data-track-label="link">Contact us</a></li>
+        </ul>
+        <ul class="c-menu c-menu--inherit">
+            <li class="c-menu__item">
+                <a class="c-menu__link" href="https://www.facebook.com/NaturePortfolioJournals/" aria-label="Facebook" data-track="click" data-track-action="facebook" data-track-label="link">
+                    <svg class="u-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20"><path d="M2.5 20C1.1 20 0 18.9 0 17.5v-15C0 1.1 1.1 0 2.5 0h15C18.9 0 20 1.1 20 2.5v15c0 1.4-1.1 2.5-2.5 2.5h-3.7v-7.7h2.6l.4-3h-3v-2c0-.9.2-1.5 1.5-1.5h1.6V3.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8.1v3h2.6V20H2.5z"/></svg>
+                </a>
+            </li>
+            <li class="c-menu__item">
+                <a class="c-menu__link" href="https://twitter.com/NaturePortfolio?lang=en" aria-label="Twitter" data-track="click" data-track-action="twitter" data-track-label="link">
+                    <svg class="u-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M17.6 4.1c.8-.5 1.5-1.4 1.8-2.4-.8.5-1.7.9-2.6 1-.7-.8-1.8-1.4-3-1.4-2.3 0-4.1 1.9-4.1 4.3 0 .3 0 .7.1 1-3.4 0-6.4-1.8-8.4-4.4C1 2.9.8 3.6.8 4.4c0 1.5.7 2.8 1.8 3.6C2 8 1.4 7.8.8 7.5v.1c0 2.1 1.4 3.8 3.3 4.2-.3.1-.7.2-1.1.2-.3 0-.5 0-.8-.1.5 1.7 2 3 3.8 3-1.3 1.1-3.1 1.8-5 1.8-.3 0-.7 0-1-.1 1.8 1.2 4 1.9 6.3 1.9C13.8 18.6 18 12 18 6.3v-.6c.8-.6 1.5-1.4 2-2.2-.7.3-1.5.5-2.4.6z"/></svg>
+                </a>
+            </li>
+            <li class="c-menu__item">
+                <a class="c-menu__link" href="https://www.youtube.com/channel/UCvCLdSgYdSTpWcOgEJgi-ng" aria-label="YouTube" data-track="click" data-track-action="youtube" data-track-label="link">
+                    <svg class="u-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M7.9 12.6V6.9l5.4 2.8c0 .1-5.4 2.9-5.4 2.9zM19.8 6s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9-2.8-.2-7-.2-7-.2s-4.2 0-7 .2c-.4 0-1.2 0-2 .9-.6.6-.8 2-.8 2S0 7.6 0 9.2v1.5c0 1.7.2 3.3.2 3.3s.2 1.4.8 2c.8.8 1.8.8 2.2.9 1.6.1 6.8.2 6.8.2s4.2 0 7-.2c.4 0 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.3V9.2c0-1.6-.2-3.2-.2-3.2z"/></svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="c-footer__grid">
+        <div class="c-footer__group">
+            <h3 class="c-footer__heading">Discover content</h3>
+            <ul class="c-footer__list">
+                <li class="c-footer__item"><a href="https://www.nature.com/siteindex" data-track="click" data-track-action="journals a-z" data-track-label="link">Journals A-Z</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/subjects/" data-track="click" data-track-action="article by subject" data-track-label="link">Articles by subject</a></li>
+                <li class="c-footer__item"><a href="https://nano.nature.com/" data-track="click" data-track-action="nano" data-track-label="link">Nano</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/protocolexchange/" data-track="click" data-track-action="protocol exchange" data-track-label="link">Protocol Exchange</a></li>
+                <li class="c-footer__item"><a href="https://www.natureindex.com/" data-track="click" data-track-action="nature index" data-track-label="link">Nature Index</a></li>
+            </ul>
+        </div>
+
+        <div class="c-footer__group">
+            <h3 class="c-footer__heading">Publishing policies</h3>
+            <ul class="c-footer__list">
+                <li class="c-footer__item"><a href="https://www.nature.com/authors/editorial_policies/" data-track="click" data-track-action="Nature portfolio policies" data-track-label="link">Nature portfolio policies</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/nature-research/open-access" data-track="click" data-track-action="open access" data-track-label="link">Open access</a></li>
+            </ul>
+        </div>
+
+        <div class="c-footer__group">
+            <h3 class="c-footer__heading">Author &amp; Researcher services</h3>
+            <ul class="c-footer__list">
+                <li class="c-footer__item"><a href="https://www.nature.com/reprints/" data-track="click" data-track-action="reprints and permissions" data-track-label="link">Reprints &amp; permissions</a></li>
+                <li class="c-footer__item"><a href="https://www.springernature.com/gp/authors/research-data" data-track="click" data-track-action="data research service" data-track-label="link">Research data</a></li>
+                <li class="c-footer__item"><a href="https://authorservices.springernature.com/go/nr" data-track="click" data-track-action="language editing" data-track-label="link">Language editing</a></li>
+                <li class="c-footer__item"><a href="https://authorservices.springernature.com/scientific-editing/" data-track="click" data-track-action="scientific editing" data-track-label="link">Scientific editing</a></li>
+                <li class="c-footer__item"><a href="https://masterclasses.nature.com/" data-track="click" data-track-action="nature masterclasses" data-track-label="link">Nature Masterclasses</a></li>
+                <li class="c-footer__item"><a href="https://partnerships.nature.com/product/researcher-training/" data-track="click" data-track-action="nature research academies" data-track-label="link">Nature Research Academies</a></li>
+                <li class="c-footer__item"><a href="https://solutions.springernature.com/" data-track="click" data-track-action="research solutions" data-track-label="link">Research Solutions</a></li>
+            </ul>
+        </div>
+
+        <div class="c-footer__group">
+            <h3 class="c-footer__heading">Libraries &amp; institutions</h3>
+            <ul class="c-footer__list">
+                <li class="c-footer__item"><a href="https://www.springernature.com/gp/librarians/tools-services" data-track="click" data-track-action="librarian service and tools" data-track-label="link">Librarian service &amp; tools</a></li>
+                <li class="c-footer__item"><a href="https://www.springernature.com/gp/librarians/manage-your-account/librarianportal" data-track="click" data-track-action="librarian portal" data-track-label="link">Librarian portal</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/openresearch/about-open-access/information-for-institutions/" data-track="click" data-track-action="open research" data-track-label="link">Open research</a></li>
+                <li class="c-footer__item"><a href="https://www.springernature.com/gp/librarians/recommend-to-your-library" data-track="click" data-track-action="Recommend to library" data-track-label="link">Recommend to library</a></li>
+            </ul>
+        </div>
+
+        <div class="c-footer__group">
+            <h3 class="c-footer__heading">Advertising &amp; partnerships</h3>
+            <ul class="c-footer__list">
+                <li class="c-footer__item"><a href="https://partnerships.nature.com/product/digital-advertising/" data-track="click" data-track-action="advertising" data-track-label="link">Advertising</a></li>
+                <li class="c-footer__item"><a href="https://partnerships.nature.com/" data-track="click" data-track-action="partnerships and services" data-track-label="link">Partnerships &amp; Services</a></li>
+                <li class="c-footer__item"><a href="https://partnerships.nature.com/media-kits/" data-track="click" data-track-action="media kits" data-track-label="link">Media kits</a></li>
+                <li class="c-footer__item"><a href="https://partnerships.nature.com/product/branded-content-native-advertising/" data-track-action="branded content" data-track-label="link">Branded content</a></li>
+            </ul>
+        </div>
+
+        <div class="c-footer__group">
+            <h3 class="c-footer__heading">Career development</h3>
+            <ul class="c-footer__list">
+                <li class="c-footer__item"><a href="https://www.nature.com/naturecareers" data-track="click" data-track-action="nature careers" data-track-label="link">Nature Careers</a></li>
+                <li class="c-footer__item"><a href="https://conferences.nature.com" data-track="click" data-track-action="nature conferences" data-track-label="link">Nature<span class="u-visually-hidden"> </span> Conferences</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/natureevents/" data-track="click" data-track-action="nature events" data-track-label="link">Nature<span class="u-visually-hidden"> </span> events</a></li>
+            </ul>
+        </div>
+
+        <div class="c-footer__group">
+            <h3 class="c-footer__heading">Regional websites</h3>
+            <ul class="c-footer__list">
+                <li class="c-footer__item"><a href="https://www.nature.com/natafrica" data-track="click" data-track-action="nature africa" data-track-label="link">Nature Africa</a></li>
+                <li class="c-footer__item"><a href="http://www.naturechina.com" data-track="click" data-track-action="nature china" data-track-label="link">Nature China</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/nindia" data-track="click" data-track-action="nature india" data-track-label="link">Nature India</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/natitaly" data-track="click" data-track-action="nature Italy" data-track-label="link">Nature Italy</a></li>
+                <li class="c-footer__item"><a href="https://www.natureasia.com/ja-jp/" data-track="click" data-track-action="nature japan" data-track-label="link">Nature Japan</a></li>
+                <li class="c-footer__item"><a href="https://www.natureasia.com/ko-kr/" data-track="click" data-track-action="nature korea" data-track-label="link">Nature Korea</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/nmiddleeast/" data-track="click" data-track-action="nature middle east" data-track-label="link">Nature Middle East</a></li>
+            </ul>
+        </div>
+
+        <div class="c-footer__group">
+            <h3 class="c-footer__heading">Legal &amp; Privacy</h3>
+            <ul class="c-footer__list">
+                <li class="c-footer__item"><a href="https://www.nature.com/info/privacy" data-track="click" data-track-action="privacy policy" data-track-label="link">Privacy Policy</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/info/cookies" data-track="click" data-track-action="use of cookies" data-track-label="link">Use of cookies</a></li>
+                <li class="c-footer__item"><a class="optanon-toggle-display" href="javascript:;" data-cc-action="preferences" data-track="click" data-track-action="manage cookies" data-track-label="link">Manage cookies/Do not sell my data</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/info/legal-notice" data-track="click" data-track-action="legal notice" data-track-label="link">Legal notice</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/info/accessibility-statement" data-track="click" data-track-action="accessibility statement" data-track-label="link">Accessibility statement</a></li>
+                <li class="c-footer__item"><a href="https://www.nature.com/info/terms-and-conditions" data-track="click" data-track-action="terms and conditions" data-track-label="link">Terms &amp; Conditions</a></li>
+                <li class="c-footer__item"><a href="https://www.springernature.com/ccpa" data-track="click" data-track-action="california privacy statement" data-track-label="link">California Privacy Statement</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="c-corporate-footer">
+    <div class="u-container">
+        <img src="/static/images/logos/sn-logo-white.svg" alt="Springer Nature" loading="lazy" width="140" height="14"/>
+        <p class="c-corporate-footer__legal" data-test="copyright">&copy; 2022 Springer Nature Limited</p>
+    </div>
+</div>
+
+    
+    <svg class="u-hide hide">
+        <symbol id="global-icon-chevron-right" viewBox="0 0 16 16">
+            <path d="M7.782 7L5.3 4.518c-.393-.392-.4-1.022-.02-1.403a1.001 1.001 0 011.417 0l4.176 4.177a1.001 1.001 0 010 1.416l-4.176 4.177a.991.991 0 01-1.4.016 1 1 0 01.003-1.42L7.782 9l1.013-.998z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="global-icon-download" viewBox="0 0 16 16">
+            <path d="M2 14c0-.556.449-1 1.002-1h9.996a.999.999 0 110 2H3.002A1.006 1.006 0 012 14zM9 2v6.8l2.482-2.482c.392-.392 1.022-.4 1.403-.02a1.001 1.001 0 010 1.417l-4.177 4.177a1.001 1.001 0 01-1.416 0L3.115 7.715a.991.991 0 01-.016-1.4 1 1 0 011.42.003L7 8.8V2c0-.55.444-.996 1-.996.552 0 1 .445 1 .996z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="global-icon-email" viewBox="0 0 18 18">
+            <path d="M1.995 2h14.01A2 2 0 0118 4.006v9.988A2 2 0 0116.005 16H1.995A2 2 0 010 13.994V4.006A2 2 0 011.995 2zM1 13.994A1 1 0 001.995 15h14.01A1 1 0 0017 13.994V4.006A1 1 0 0016.005 3H1.995A1 1 0 001 4.006zM9 11L2 7V5.557l7 4 7-4V7z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="global-icon-institution" viewBox="0 0 18 18">
+            <path d="M14 8a1 1 0 011 1v6h1.5a.5.5 0 01.5.5v.5h.5a.5.5 0 01.5.5V18H0v-1.5a.5.5 0 01.5-.5H1v-.5a.5.5 0 01.5-.5H3V9a1 1 0 112 0v6h8V9a1 1 0 011-1zM6 8l2 1v4l-2 1zm6 0v6l-2-1V9zM9.573.401l7.036 4.925A.92.92 0 0116.081 7H1.92a.92.92 0 01-.528-1.674L8.427.401a1 1 0 011.146 0zM9 2.441L5.345 5h7.31z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="global-icon-search" viewBox="0 0 22 22">
+            <path fill-rule="evenodd" d="M21.697 20.261a1.028 1.028 0 01.01 1.448 1.034 1.034 0 01-1.448-.01l-4.267-4.267A9.812 9.811 0 010 9.812a9.812 9.811 0 1117.43 6.182zM9.812 18.222A8.41 8.41 0 109.81 1.403a8.41 8.41 0 000 16.82z"/>
+        </symbol>
+        <symbol id="icon-info" viewBox="0 0 18 18">
+            <path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm0 7h-1.5l-.11662113.00672773c-.49733868.05776511-.88337887.48043643-.88337887.99327227 0 .47338693.32893365.86994729.77070917.97358929l.1126697.01968298.11662113.00672773h.5v3h-.5l-.11662113.0067277c-.42082504.0488782-.76196299.3590206-.85696816.7639815l-.01968298.1126697-.00672773.1166211.00672773.1166211c.04887817.4208251.35902055.761963.76398144.8569682l.1126697.019683.11662113.0067277h3l.1166211-.0067277c.4973387-.0577651.8833789-.4804365.8833789-.9932723 0-.4733869-.3289337-.8699473-.7707092-.9735893l-.1126697-.019683-.1166211-.0067277h-.5v-4l-.00672773-.11662113c-.04887817-.42082504-.35902055-.76196299-.76398144-.85696816l-.1126697-.01968298zm0-3.25c-.69035594 0-1.25.55964406-1.25 1.25s.55964406 1.25 1.25 1.25 1.25-.55964406 1.25-1.25-.55964406-1.25-1.25-1.25z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-success" viewBox="0 0 18 18">
+            <path d="M9 0a9 9 0 110 18A9 9 0 019 0zm3.486 4.982l-4.718 5.506L5.14 8.465a.991.991 0 00-1.423.133 1.06 1.06 0 00.13 1.463l3.407 2.733a1 1 0 001.387-.133l5.385-6.334a1.06 1.06 0 00-.116-1.464.991.991 0 00-1.424.119z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-chevron-down" viewBox="0 0 16 16">
+            <path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"/>
+        </symbol>
+        <symbol id="icon-warning" viewBox="0 0 18 18">
+            <path d="m9 11.75c.69035594 0 1.25.5596441 1.25 1.25s-.55964406 1.25-1.25 1.25-1.25-.5596441-1.25-1.25.55964406-1.25 1.25-1.25zm.41320045-7.75c.55228475 0 1.00000005.44771525 1.00000005 1l-.0034543.08304548-.3333333 4c-.043191.51829212-.47645714.91695452-.99654578.91695452h-.15973424c-.52008864 0-.95335475-.3986624-.99654576-.91695452l-.33333333-4c-.04586475-.55037702.36312325-1.03372649.91350028-1.07959124l.04148683-.00259031zm-.41320045 14c-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9 4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-plus" viewBox="0 0 16 16">
+            <path d="m2.00087166 7h4.99912834v-4.99912834c0-.55276616.44386482-1.00087166 1-1.00087166.55228475 0 1 .44463086 1 1.00087166v4.99912834h4.9991283c.5527662 0 1.0008717.44386482 1.0008717 1 0 .55228475-.4446309 1-1.0008717 1h-4.9991283v4.9991283c0 .5527662-.44386482 1.0008717-1 1.0008717-.55228475 0-1-.4446309-1-1.0008717v-4.9991283h-4.99912834c-.55276616 0-1.00087166-.44386482-1.00087166-1 0-.55228475.44463086-1 1.00087166-1z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-minus" viewBox="0 0 16 16">
+            <path d="m2.00087166 7h11.99825664c.5527662 0 1.0008717.44386482 1.0008717 1 0 .55228475-.4446309 1-1.0008717 1h-11.99825664c-.55276616 0-1.00087166-.44386482-1.00087166-1 0-.55228475.44463086-1 1.00087166-1z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-error" viewBox="0 0 18 18">
+            <path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-springer-arrow-left">
+            <path d="M15 7a1 1 0 000-2H3.385l2.482-2.482a.994.994 0 00.02-1.403 1.001 1.001 0 00-1.417 0L.294 5.292a1.001 1.001 0 000 1.416l4.176 4.177a.991.991 0 001.4.016 1 1 0 00-.003-1.42L3.385 7H15z"/>
+        </symbol>
+        <symbol id="icon-springer-arrow-right">
+            <path d="M1 7a1 1 0 010-2h11.615l-2.482-2.482a.994.994 0 01-.02-1.403 1.001 1.001 0 011.417 0l4.176 4.177a1.001 1.001 0 010 1.416l-4.176 4.177a.991.991 0 01-1.4.016 1 1 0 01.003-1.42L12.615 7H1z"/>
+        </symbol>
+    </svg>
+
+</footer>
+
+    
+</body>
+</html>
+
